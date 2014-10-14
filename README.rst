@@ -4,6 +4,8 @@ Mockup training materials
 Initially created for the Mockup Training at Ploneconf 2014.
 http://2014.ploneconf.org/training/mockup-training
 
+Google docs doc:
+https://docs.google.com/document/d/1cbb5RuhyqdbGEGvnEOu1rc1gYuFFn8l_zwQ08jE_9xE
 
 Structure
 =========
