@@ -1,0 +1,13 @@
+iframe {
+    margin:0;
+    overflow:hidden;
+    border:1px solid #CCC;
+    border-width:1px 1px 0;
+    margin-bottom:5px;
+}
+
+.reveal section img.logo {
+     border: none;
+     box-shadow: none;
+     background: none;
+}
