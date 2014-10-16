@@ -1,1 +1,11 @@
-bower_components
+*.mo
+*~
+.doctrees
+.vagrant
+_build/
+bin/
+build/
+include/
+lib/
+lib64
+local/
