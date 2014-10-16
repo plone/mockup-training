@@ -10,8 +10,6 @@ The basic idea about this training (and even the boilerplate for this
 materials) was stolen from Philip Bauer's and Patrick Gerken's `Mastering Plone
 <https://github.com/plone/training>`_ materials. That is:
 
-.. note:: 
-
     The aim is that anyone with the appropriate knowledge can give a training
     based on it and contribute to it.  It is published as Open Source on
     `github <https://github.com/plone/training>`_ and `readthedocs
@@ -24,7 +22,6 @@ Trainers
 The following trainers have given trainings based on Mastering Mockup:
 
 Johannes Raggam
-
     Johannes Raggam from Graz/Austria works most of the time with a technology
     stack based around Python, Plone, Pyramid and Javascript. As an active Open
     Source / Free Software developer he believes in the power of collaborative
@@ -32,7 +29,6 @@ Johannes Raggam
     2009 and member of the Plone Framework Team since 2012.
 
 Franco Pellegrini
-
     Franco Pellegrini is a software developer from Cordoba, Argentina. He
     started developing Plone in 2005 in a small software company, and as an
     independent contractor since 2011. He believes in free software philosophy,
