@@ -16,4 +16,5 @@ Contents:
     :numbered: 1
 
     intro
+    install
 

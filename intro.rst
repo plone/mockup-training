@@ -40,6 +40,9 @@ quite common among JavaScript developers. This toolset includes:
 
 - `NodeJS <http://nodejs.org/>`_ (`Github <https://github.com/joyent/node>`_, `Wikipedia <http://en.wikipedia.org/wiki/Node.js>`_) as a requirement for Grunt.
 
+- Mocha
+
+- PhantomJS
 
 `<>`_ (`Github <>`_, `Wikipedia <>`_)
 
