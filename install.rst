@@ -79,10 +79,10 @@ The ``Makefile`` provides this list of commands::
     bootstrap           Bootstrap Mockup. Cleans the environment (deletes node_modules and bower_components) and installs npm and bower dependencies.
     bootstrap-common    Common tasks for other bootstrap tasks. Not intended to be run manually.
     bootstrap-nix       Bootstraps Mockup for NixOS environments. It installs all dependencies via the nix package manager. For nix users.
-    bundle-filemanager  XXX
+    bundle-filemanager  Builds the resourceeditor filemanager bundle.
     bundle-plone        Builds the Plone bundle.
     bundle-resourceregistry Builds the bundle for the new resource registry.
-    bundle-structure    XXX Builds the structure (content browser) bundle.
+    bundle-structure    Builds the structure bundle (wildcard.foldercontents content browser).
     bundle-widgets      Builds the widgets bundle.
     bundles             Builds all the default bundles (bundle-widgets, bundle-structure, bundle-plone).
     clean               Clean the environment by removing the build, node_modules and bower_components directory.
@@ -110,5 +110,5 @@ in ``bower.json`` with::
 
     "mockup-core": "file:///PATH/TO/mockup-core/.git/#BRANCHNAME"
 
-Please note, you have to commit any changes on mockup-core and then run ``make
-bootstrap`` in mockup again.
+Please note, you have to commit any changes on mockup-core and then run ``bower
+install``, ``bower update`` or ``make bootstrap`` in mockup again.
