@@ -24,6 +24,13 @@ so with a little effort, it should work!
 * Make
 
 
+.. note::
+    There is a useful tool, which helps you to install different versions of
+    Node, if you need it. The `Node Version Manager
+    <https://github.com/creationix/nvm>`_, ``nvm``. Try it, if you run into
+    problems with your system's Node version.
+
+
 Installing Mockup
 -----------------
 
@@ -98,6 +105,21 @@ The ``Makefile`` provides this list of commands::
 
 All tests also accept the experimental ``--debug`` and ``--verbose`` options to
 help with debugging by changing the verbosity of the log messages.
+
+
+Using Bower directly
+--------------------
+
+After changes to bower.json, you don't have to run ``make bootstrap``, which
+swipes all dependencies and starts installing them all over again. You can use
+bower directly::
+
+    $ bower search PACKAGENAME  # search online for a package in the bower registry
+    $ bower list  # list all dependencies and possible updates
+    $ bower install  # install all dependencies listed in bower.json
+    $ bower update  # update all dependencies to the versions specified in bower.json
+
+For more information, see the `bower API documentation <http://bower.io/docs/api/>`_.
 
 
 Including a local mockup-core checkout for developing
