@@ -1,5 +1,5 @@
-About Mastering Plone
-=====================
+About Mastering Mockup
+======================
 
 This training was created by `Johannes Raggam <https://github.com/thet>`_ and
 `Franco Pellegrini <http://github.com/frapell`_  to teach about `Mockup
