@@ -21,30 +21,77 @@ Bundles
 Mockup Project Structure
 ------------------------
 
+``bower.json``: All frontend related, bower managed dependencies.
+
+``bower_components/``: Here, all bower managed dependencies are installed.
+
 ``build/``: Contains the builded bundles. This are combined, optimized, and
 minimized JavaScript code, as well as the compiled CSS (Less) and media files
 from a bunlde's dependencies.
 
 ``docs/``: Mockup documentation files and examples built with ``make docs``.
 
+``Gruntfile.js``: Defines the directives for creating the bundles,
+documentation and running the tests. It depends on mockup-core's `grunt base file
+<https://github.com/plone/mockup-core/blob/87d58d984d5ab193e23f6b6fcd5883a159113b10/js/grunt.js#L53>`_.
+
+``index.html``: Documentation index.html file. This is the entry file when
+viewing the documentation via ``http://localhost:8000`` after starting ``python
+-m SimpleHTTPServer`` in mockup root.
+
+``js/bundles/``: The directory, where Mockup's bundles are defined.
+
+``js/ui/``: Mockup UI components for reuse in patterns (Buttons, Toolbars, etc).
+
 ``js/config.js``: RequireJS configuration. This is the file, where all
 JavaScript dependencies are defined, so that RequireJS is able to find them via
 a name.
 
-``js/bundles``: The directory, where Mockup's bundles are defined.
+``js/i18n.js``: Fork of `jarn.jsi18n <https://github.com/collective/jarn.jsi18n>`_,
+a JavaScript i18n framework and integration layer for Plone message catalogs.
 
-  - ``js/patterns`` : Contains all individual, encapsulated patterns
-      e.g. widgets.js
+``js/router.js``: Framework to add routing capabilities, execute callbacks on
+routing and manipulating the browser history on routing.
 
-- ``less/`` : Contains all the [Less](http://lesscss.org/) code for all the patterns and bundles
+``js/utils.js``: Generic reusable utilities for patterns. Current available
+utilies include: ``generateId``, ``Loading`` animation, ``QueryHelper`` for
+generating request query strings and more.
 
-- ``lib/`` : Contains external libraries not necessarily found in the bower repositories
+``less/``: All LESS style files, which are needed for bundles or patterns.
+Grunt's less task default behavior is to compile a CSS file from less the less
+file with the same name as the bundle name. For more information se the `grunt.js
+<https://github.com/plone/mockup-core/blob/87d58d984d5ab193e23f6b6fcd5883a159113b10/js/grunt.js#L53>`_
+file in ``mockup-core``.
 
-- ``tests/`` : Contains all tests for patterns and bundles, including general setup and configuration code
+``lib/``: Extra frontend libraries, which are not available via bower. In our
+case it's the `jquery.event.drag.js <http://threedubmedia.com/code/event/drag>`_
+and `jquery.event.drop.js <http://threedubmedia.com/code/event/drop>`_ files,
+which provide drag and drop events for jQuery.
 
-- ``Gruntfile.js`` : Defines the directives for compiling Less,
-   and for combining/optimizing/minimizing JavaScript to the defined bundles
+``Makefile``: ``GNU make`` Makefile, which defines common actions for
+developing with mockup. It uses Grunt to a large extend. E.g. ``make
+bootstrap``, ``make test``, ``make docs`` and ``make bundles``. For more
+information see: :ref:`makefile-commands`.
 
-- ``index.html`` : The main source of documentation for the mockup project
+``mockup/``: Files for integrating ``mockup`` in Plone, e.g. in
+``plone.app.widgets``. This is only for development purposes, so that the task
+of copying bundle files to ``plone.app.widgets`` isn't necessary. Still, you
+have to do a ``make bundle-BUNDLENAME`` for compiling the files, which are
+accessed by ``plone.app.widgets``.
 
-- ``Makefile`` : Scripts to build bundles, bootstrap the environment etc.
+``node_modules/``: Node / npm managed dependencies are in here. These are all
+not-frontend related JavaScript dependencies for running grunt, bower, tests
+and the like.
+
+``package.json``: Node / npm package dependencies and metadata for mockup's
+infrastructure. The dependencies defined in here land in ``node_modules``.
+
+``patterns/``: Here, the actual patterns are defined in. For each pattern, one
+directory. Some patterns include less resource files, templates and submodules.
+
+``setup.py``: Setuptools based Python package infrastructure. This file is
+needed to include Mockup in Plone for development, e.g. in
+``plone.app.widgets``.
+
+``tests/``: Contains all tests for patterns and bundles, including general
+setup and configuration code.

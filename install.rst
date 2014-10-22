@@ -77,6 +77,8 @@ Or run the tests for an individual plugin::
     $ make test-once pattern=select2
 
 
+.. _makefile-commands:
+
 More Makefile commands
 ----------------------
 
