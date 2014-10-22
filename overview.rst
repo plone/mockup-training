@@ -18,6 +18,44 @@ Bundles
     Plone products.
 
 
+Mockup Core Project Structure
+-----------------------------
+
+Mockup Core defines the basic infrastructure for Mockup: the base Grunt tasks,
+a base pattern, the pattern registry and the documentation building framework.
+You can reuse these components for mockup projects.
+
+``bower.json``: All frontend related, bower managed dependencies.
+
+``bower_components/``: Here, all bower managed dependencies are installed.
+
+``Gruntfile.js``: Defines the tasks for running jshint and the tests.
+
+``js/config.js``: RequireJS configuration. This is the file, where all
+JavaScript dependencies are defined, so that RequireJS is able to find them via
+a name.
+
+``js/docs/``: Infrastructure for creating mockup's documentation from
+comment-sections in pattern files, following a specific convention.
+
+``js/grunt.js``: Mockup Core's grunt infrastructure.
+
+``js/pattern.js``: Base Pattern.
+
+``js/registry.js``: Mockup pattern registry.
+
+``Makefile``: ``GNU make`` Makefile, which defines common actions for
+developing with mockup-core. It uses Grunt to a large extend.
+
+``node_modules/``: Node / npm managed dependencies are in here. These are all
+not-frontend related JavaScript dependencies for running grunt, bower, tests
+and the like.
+
+``package.json``: Node / npm package dependencies and metadata for Mockup Core's
+infrastructure. The dependencies defined in here land in ``node_modules``.
+
+``tests/``: Contains all tests, including general setup and configuration code.
+
 Mockup Project Structure
 ------------------------
 
@@ -31,8 +69,8 @@ from a bunlde's dependencies.
 
 ``docs/``: Mockup documentation files and examples built with ``make docs``.
 
-``Gruntfile.js``: Defines the directives for creating the bundles,
-documentation and running the tests. It depends on mockup-core's `grunt base file
+``Gruntfile.js``: Defines the tasks for creating bundles, documentation and
+running the tests. It depends on mockup-core's `grunt base file
 <https://github.com/plone/mockup-core/blob/87d58d984d5ab193e23f6b6fcd5883a159113b10/js/grunt.js#L53>`_.
 
 ``index.html``: Documentation index.html file. This is the entry file when
@@ -40,8 +78,6 @@ viewing the documentation via ``http://localhost:8000`` after starting ``python
 -m SimpleHTTPServer`` in mockup root.
 
 ``js/bundles/``: The directory, where Mockup's bundles are defined.
-
-``js/ui/``: Mockup UI components for reuse in patterns (Buttons, Toolbars, etc).
 
 ``js/config.js``: RequireJS configuration. This is the file, where all
 JavaScript dependencies are defined, so that RequireJS is able to find them via
@@ -52,6 +88,8 @@ a JavaScript i18n framework and integration layer for Plone message catalogs.
 
 ``js/router.js``: Framework to add routing capabilities, execute callbacks on
 routing and manipulating the browser history on routing.
+
+``js/ui/``: Mockup UI components for reuse in patterns (Buttons, Toolbars, etc).
 
 ``js/utils.js``: Generic reusable utilities for patterns. Current available
 utilies include: ``generateId``, ``Loading`` animation, ``QueryHelper`` for
@@ -83,7 +121,7 @@ accessed by ``plone.app.widgets``.
 not-frontend related JavaScript dependencies for running grunt, bower, tests
 and the like.
 
-``package.json``: Node / npm package dependencies and metadata for mockup's
+``package.json``: Node / npm package dependencies and metadata for Mockup's
 infrastructure. The dependencies defined in here land in ``node_modules``.
 
 ``patterns/``: Here, the actual patterns are defined in. For each pattern, one
