@@ -2,7 +2,7 @@ About Mastering Mockup
 ======================
 
 This training was created by `Johannes Raggam <https://github.com/thet>`_ and
-`Franco Pellegrini <http://github.com/frapell`_  to teach about `Mockup
+`Franco Pellegrini <http://github.com/frapell>`_  to teach about `Mockup
 <http://plone.github.io/mockup/>`_, the new Frontend library for `Plone 5
 <https://github.com/plone/buildout.coredev/tree/5.0>`_ at the `Plone Conference
 2014 <http://2014.ploneconf.org>`_ in Bristol.
