@@ -18,6 +18,18 @@ Bundles
     Plone products.
 
 
+RequireJS vs Common JS modules
+------------------------------
+
+Mockup is using RequireJS and Common JS modules at the same time. For all
+frontend related stuff, RequireJS with it's configuration in `js/config.js` and
+`define` method is used. For all build infrastructure related stuff, CommonJS
+modules, with it's `module.exports` declarations are used.
+
+If you are aware about this distinction, you can avoid some head wrangling
+moments.
+
+
 Mockup Core Project Structure
 -----------------------------
 

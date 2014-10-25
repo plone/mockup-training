@@ -20,6 +20,7 @@ Contents:
     install-generator
     overview
     creating_pattern
+    writing-documentation
 
 TODO: howto document patterns
 TODO: list of patterns to create
