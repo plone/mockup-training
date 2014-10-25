@@ -21,6 +21,8 @@ Contents:
     overview
     creating_pattern
     writing-documentation
+    mockup-alternatives
+
 
 TODO: howto document patterns
 TODO: list of patterns to create
