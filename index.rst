@@ -17,4 +17,9 @@ Contents:
 
     intro
     install
+    install-generator
     overview
+    creating_pattern
+
+TODO: howto document patterns
+TODO: list of patterns to create
