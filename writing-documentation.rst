@@ -1,29 +1,29 @@
 Writing documentation for Mockup
 ================================
 
-The documentation for Mockuo is automatically generated from comments in
+The documentation for Mockup is automatically generated from comments in
 pattern code. The structure is as follows::
 
     /* PATTERN TITLE
      *
-     * Options (optional):
-     *    Pattern Option (VALUE TYPE): Type
+     * Options:
+     *    OPTION_TITLE(TYPE): DESCRIPTION
      *
      * Documentation:
-     *   # General
+     *   # Markdown title
      *
-     *   Some descriptibe text...
+     *   Markdown structured description text
      *
      *   # Example
      *
-     *   {{ example-1 }}
+     *   {{ EXAMPLE_ANCHOR }}
      *
-     * Example: example-1
-     *    <div class="pat-leaflet"></div>
+     * Example: EXAMPLE_ANCHOR
+     *    <div class="pat-PATTERN_NAME"></div>
      *
      * License:
-     * Optional License section. Use it, if the license for this pattern is
-     * different from the projcets license.
+     *   License text, if it differs from the package's license, which is
+     *   declared in package.json.
      *
      */
 
