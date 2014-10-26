@@ -24,7 +24,11 @@ Using Vagrant
 
 This is a fantastic alternative, if you don't want to pollute your system installing dozens of packages. It will create a virtual environment using Ubuntu 14.04, install all the needed dependencies, such as npm, less, grunt, and so on... so you don't have to bother about it.
 
-The relevant files are "Vagrantfile" and "provision.sh". Understanging and using Vagrant is out of this document scope. For now, all you need to care about is running any of the following commands in the directory that holds the Vagrantfile:
+Just pull the development version of the generator::
+
+    git clone git@github.com:collective/generator-plonemockup.git
+
+The relevant files are "Vagrantfile" and "provision.sh". Understanding and using Vagrant is out of this document scope. For now, all you need to care about is running any of the following commands inside the directory you have just cloned, that holds the Vagrantfile:
 
 - ``vagrant up``
 
