@@ -20,3 +20,4 @@ Contents:
     install-generator
     overview
     create_your_own
+    including_from_mockup
