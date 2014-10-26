@@ -4,14 +4,14 @@ Overview of Mockup
 Mockup Nomenclature
 -------------------
 
-Patterns
+Pattern
     Patterns are units of JavaScript, defined by a RequireJS/AMD style module.
     Patterns may require other patterns to operate, and may also require third
     party libraries.  Think of a pattern as a module -- encapsulated and
     separate, and providing a widget or tool to be used by other patterns or in
     html.
 
-Bundles
+Bundle
     Bundles are defined in a similar way to *Patterns* -- they are encapsulated
     bits of JavaScript that define requirements for a bundle and have some
     extra code in them that's useful for integrating the required patterns into
@@ -67,6 +67,7 @@ and the like.
 infrastructure. The dependencies defined in here land in ``node_modules``.
 
 ``tests/``: Contains all tests, including general setup and configuration code.
+
 
 Mockup Project Structure
 ------------------------
