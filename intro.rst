@@ -12,22 +12,22 @@ Mockup grew out from searching a solution to get all JavaScript within Plone to
 a manageable, reproducible, stable and testable state.
 
 Until now, JavaScript in Plone was added here and there by core modules and
-addons to the the Resource Registry of Plone. We did only have the possibility
-to define a order, in which JavaScript resources should be loaded. The order
-could be defined relative to another JavaScript resource. Same is valid for CSS
+addons to the the Resource Registry of Plone. It was only possible to define 
+the order in which JavaScript resources should be loaded. The order could 
+be defined relative to another JavaScript resource. Same is valid for CSS
 resources. It was not possible to declare dependencies to other JavaScript
-resources. Wether they were available, because they were loaded beforehand into
+resources. Either they were available, because they were loaded beforehand into
 the global namespace, or the script threw an error. None - or rarely any - of
-the JavaScript within Plone was tested. Developers need to know a fair amount
-of Plone developing to contribute JavaScript or CSS resources to it. Defining
-resources, registering those in the registry, or at least knowledge about the
-(now deprecated) portal_skins machinery. Therefore, mainly Python developers
-were contributing JavaScript code. It was too hard and boring for Frontend
-developers to help out here.
+the JavaScript within Plone was tested. Developers needed to know a fair amount
+of Plone developing to contribute JavaScript or CSS resources to it, such as 
+defining resources, registering those in the registry, or at least knowledge 
+about the (now deprecated) portal_skins machinery. Therefore, mainly Python 
+developers were contributing JavaScript code. It was too hard and boring for 
+Frontend developers to help out here.
 
 Plone's new theming engine ``Diazo`` solved some of the problems. But still,
 JavaScript code was untested, without a defined set of dependencies... It
-worked or worked not often only by accident.
+did or did not work, often only by accident.
 
 Mockup gives us an elegant solution to all of the problems outlined above: By
 using RequireJS modules (as well as the Common JS based node modules for the
