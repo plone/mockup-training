@@ -8,6 +8,7 @@ Training materials for the Mockup training.
     :maxdepth: 2
 
     about
+    agenda of this training
 
 Contents:
 
@@ -16,8 +17,8 @@ Contents:
     :numbered: 1
 
     intro
+    install-vagrant
     install
-    install-generator
     overview
     create_your_own
     creating_pattern

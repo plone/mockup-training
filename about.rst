@@ -1,6 +1,10 @@
 About Mastering Mockup
 ======================
 
+.. note::
+    This training materials are in a work in progress state. You can contribute
+    and help getting it better!
+
 This training was created by `Johannes Raggam <https://github.com/thet>`_ and
 `Franco Pellegrini <http://github.com/frapell>`_  to teach about `Mockup
 <http://plone.github.io/mockup/>`_, the new Frontend library for `Plone 5
@@ -13,8 +17,10 @@ materials) was stolen from Philip Bauer's and Patrick Gerken's `Mastering Plone
 
     The aim is that anyone with the appropriate knowledge can give a training
     based on it and contribute to it.  It is published as Open Source on
-    `github <https://github.com/plone/training>`_ and `readthedocs
-    <http://mockup-training.readthedocs.org/>`_.
+    Github and readthedocs.
+
+This training materials are available on `Github
+<https://github.com/plone/mockup-training>`_ and readthedocs (To be done).
 
 
 Trainers
