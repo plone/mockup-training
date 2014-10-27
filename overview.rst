@@ -1,6 +1,11 @@
 Overview of Mockup
 ==================
 
+There is also a basic minimal pattern with with comments all over the source
+code, which explains the structure of a Mockup project. You can find it here:
+https://github.com/collective/mockup-minimalpattern
+
+
 Mockup Nomenclature
 -------------------
 
