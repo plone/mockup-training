@@ -37,3 +37,33 @@ Day 2 (28-10-2014)
 
 
 
+Tasklist for Day 2
+------------------
+
+- Create patterns for remaining scripts in plone_ecmascript.
+
+    - [ ] cookie_functions `CMPlone#282 <https://github.com/plone/Products.CMFPlone/issues/282>`_
+    - [ ] inline_validation `CMPlone#282 <https://github.com/plone/Products.CMFPlone/issues/282>`_
+    - [ ] jquery.highlightsearchterms `CMPlone#282 <https://github.com/plone/Products.CMFPlone/issues/282>`_
+    - [ ] js-standards `CMPlone#282 <https://github.com/plone/Products.CMFPlone/issues/282>`_
+    - [ ] kss-bbb `CMPlone#282 <https://github.com/plone/Products.CMFPlone/issues/282>`_
+    - [ ] livesearch `CMPlone#282 <https://github.com/plone/Products.CMFPlone/issues/282>`_
+    - [ ] login `CMPlone#282 <https://github.com/plone/Products.CMFPlone/issues/282>`_
+    - [ ] mark_special_links `CMPlone#282 <https://github.com/plone/Products.CMFPlone/issues/282>`_
+    - [ ] popupforms `CMPlone#282 <https://github.com/plone/Products.CMFPlone/issues/282>`_
+    - [ ] table_sorter `CMPlone#282 <https://github.com/plone/Products.CMFPlone/issues/282>`_
+    - [ ] unlockOnFormUnload `CMPlone#282 <https://github.com/plone/Products.CMFPlone/issues/282>`_
+
+- Make sure correct widgets from plone.app.widgets are used for dublin core fields `CMPlone#281 <https://github.com/plone/Products.CMFPlone/issues/281>`_
+- content rules javascript broken on plone 5 `CMPlone#279 <https://github.com/plone/Products.CMFPlone/issues/279>`_
+
+Eventually, if someone is up to
++++++++++++++++++++++++++++++++
+
+- Issues in https://github.com/plone/mockup/issues 
+- plone.app.widgets code and test needs to be moved to CMFPlone/plone.app packages `CMPlone#280 <https://github.com/plone/Products.CMFPlone/issues/280>`_
+- legacy js legacy import not importing correct order `CMPlone#275 <https://github.com/plone/Products.CMFPlone/issues/275>`_
+
+
+
+  `CMPlone#282 <https://github.com/plone/Products.CMFPlone/issues/282>`_
