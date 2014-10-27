@@ -41,6 +41,11 @@ Open the ``js/patterns/mypattern.js`` file. Its sections are already commented::
 See it in action
 ----------------
 
+There are two ways of seeing the pattern through the web:
+
+1) Open it in a browser
++++++++++++++++++++++++
+
 The best way to understand how all this works is to see it working. Open ``dev/dev.html`` in your browser
 
 WARNING: Working locally will make the browser to complain with::
@@ -50,6 +55,15 @@ WARNING: Working locally will make the browser to complain with::
 This is a security feature. To go around it in chrome, you need to start it with a ``--disable-web-security`` parameter
 
 Now, after this, you should see the message ``Your Pattern "mypattern" works!``. This is because the patter we have just created does this in its ``init`` class ( ``self.$el.append('<p>Your Pattern "' + self.name + '" works!</p>');`` ) where, ``self.$el`` is the HTML element which loads the pattern.
+
+2) Use Python's SimpleHTTPServer
+++++++++++++++++++++++++++++++++
+
+In the project root, start Python's SimpleHTTPServer like so::
+
+    $ python -m SimpleHTTPServer 8000
+
+And open your webbrowser pointing to http://localhost:8000
 
 
 Let's make something interesting
