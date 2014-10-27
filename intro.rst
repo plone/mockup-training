@@ -72,7 +72,7 @@ over and use something else. Or only small parts of Mockup. It's up to you and
 your requirements.
 
 But Mockup is only a small layer, which is loading others' JavaScript. The
-bigger payload is the JavaScript, mockup is loading. E.g. TinyMCE, Select2, ACE
+bigger payload is the JavaScript loaded by mockup. E.g. TinyMCE, Select2, ACE
 Editor and more. OK, Web components are doing the same and Angular JS also. Web
 Components, a very promising approach which solves exactly the same problems as
 Mockup does, is a W3C draft and it's implementations only work for the very
