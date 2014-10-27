@@ -117,7 +117,7 @@ quite common among JavaScript developers. This toolset includes:
 - `RequireJS <http://requirejs.org/>`_ (`Github <https://github.com/jrburke/requirejs>`_)
   for defining dependencies between JavaScript modules. It uses the
   `Asynchronous Module Definition <https://github.com/amdjs/amdjs-api/blob/master/AMD.md>`_
-  approach, opposed to the what the `CommonJS Module Definition <https://github.com/cmdjs/specification/blob/master/draft/module.md>`_ is defining.
+  approach, as opposed to the `CommonJS Module Definition <https://github.com/cmdjs/specification/blob/master/draft/module.md>`_ is defining.
   There is a document, `explaining the reason behind AMD <http://requirejs.org/docs/whyamd.html>`_, which is worth a read.
   With the upcoming ECMA Script 6 standard, we will get JavaScript module
   definitions and dependency declarations `built into the Language <http://www.2ality.com/2014/09/es6-modules-final.html>`_.
@@ -146,8 +146,8 @@ quite common among JavaScript developers. This toolset includes:
 As always, some of these technologies can be discussed controversially. There
 are other options for package management, build infrastructure, declaring
 dependencies, preprocessing CSS - nearly for each aspect of Mockup. JavaScript
-has an insanely fast moving ecosystem. Furtunatly, many Frameworks are quite
-excellent. Finally we had to decide for some of these Frameworks. Mockup is
-using well proven and widely used Frameworks. For sure, we will have to adapt
-Mockup to fit to changed conditions in the future, but we're well of with the
-tehcnologies choosen.
+has an insanely fast moving ecosystem. Furtunately, many Frameworks are quite
+excellent. In the final analysis, we had to decide for some of these Frameworks. 
+Mockup is using well proven and widely used Frameworks. For sure, we will have 
+to adapt Mockup to fit to changed conditions in the future, but we're well off 
+with the technologies chosen.
