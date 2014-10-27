@@ -19,8 +19,8 @@ Contents:
     install
     install-generator
     overview
-    creating_pattern
     create_your_own
+    creating_pattern
     including_from_mockup
     writing-documentation
     mockup-alternatives

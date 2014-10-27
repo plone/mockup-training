@@ -1,8 +1,164 @@
-Creating a pattern
-==================
+Creating your first pattern
+===========================
 
 
-Best, you start of by using the yo based `generator-plonemockup <TODO>`_. But a
-minimal pattern can also be found in the Github repository
-`mockup-minimalpattern <TODO>`_. The source code is annotated with comments to help you
-understand writing patterns.
+Now that you have generated your first package, we will be creating a pattern.
+The generator already creates the biolerplate for a pattern and the needed bits to use it, so we will be just adding code to it.
+
+
+Write the pattern
+-----------------
+
+Open the ``js/patterns/mypattern.js`` file. Its sections are already commented::
+
+    define([
+        'jquery',
+        'mockup-patterns-base'
+    ], function($, Base) {
+        'use strict';
+
+    var mypatternPattern = Base.extend({
+        // The name for this pattern
+        name: 'mypattern',
+
+        defaults: {
+            // Default values for attributes
+        },
+
+        init: function() {
+            // The init code for your pattern goes here
+            var self = this;
+            // self.$el contains the html element
+            self.$el.append('<p>Your Pattern "' + self.name + '" works!</p>');
+        }
+    });
+
+    return mypatternPattern;
+
+    });
+
+
+See it in action
+----------------
+
+The best way to understand how all this works is to see it working. Open ``dev/dev.html`` in your browser
+
+WARNING: Working locally will make the browser to complain with::
+
+    XMLHttpRequest cannot load ... Cross origin requests are only supported for HTTP.
+
+This is a security feature. To go around it in chrome, you need to start it with a ``--disable-web-security`` parameter
+
+Now, after this, you should see the message ``Your Pattern "mypattern" works!``. This is because the patter we have just created does this in its ``init`` class ( ``self.$el.append('<p>Your Pattern "' + self.name + '" works!</p>');`` ) where, ``self.$el`` is the HTML element which loads the pattern.
+
+
+Let's make something interesting
+--------------------------------
+
+Add some HTML
++++++++++++++
+
+Open ``dev/dev.html`` file in your editor and replace::
+
+    <div class="pat-mypattern">
+    </div>
+
+with::
+
+    <div class="pat-mypattern">
+        <p id="target">This will get a background color</p>
+        <button id="trigger">Press me!</button>
+    </div>
+
+
+Add some CSS
+++++++++++++
+
+Open ``less/myproject.less`` file in your editor and add::
+
+    .red-background {
+        background-color: red;
+    }
+
+    .blue-background {
+        background-color: blue;
+    }
+
+
+Write your pattern
+++++++++++++++++++
+
+Open ``js/patterns/mypattern.js`` file and replace everything with::
+
+    define([
+        'jquery',
+        'mockup-patterns-base'
+    ], function($, Base) {
+        'use strict';
+
+    var mypatternPattern = Base.extend({
+        name: 'mypattern',
+
+        defaults: {
+            initial_color: 'red'
+        },
+
+        change_color: function ($this) {
+            var self = this;
+            self.$el.find('p#target').removeClass(self.$current_color+'-background');
+            if ( self.$current_color === 'red' ){
+                self.$current_color = 'blue';
+            }
+            else {
+                self.$current_color = 'red';
+            }
+            self.$el.find('p#target').addClass(self.$current_color+'-background');
+        },
+
+        init: function() {
+            var self = this;
+            self.$el.find('button#trigger').on('click', function(e) {
+                self.change_color();
+            });
+            self.$current_color = self.options.initial_color;
+            self.$el.find('p#target').addClass(self.$current_color+'-background');
+        }
+    });
+
+    return mypatternPattern;
+
+    });
+
+So, let's explain what are the things we added:
+
+- We modified the ``init`` method, so:
+
+    1. It will subscribe an event when pressing the button to call the ``change_color`` method
+    2. It will get the default value of ``initial_color``, defined in ``defaults`` and save it in an internal variable
+    3. We assign the class to the <p> element
+
+- We defined a default initial ``red`` value for the ``initial_color``. More on this later
+
+- We created a new method, called ``change_color`` that will change from ``red`` to ``blue`` and back.
+
+Now, if you refresh your browser, the paragraph should have a red background, but when pressing the button, it switches to blue, and then back to red when pressed again.
+
+
+Defining initial default values
+-------------------------------
+
+As we seen before, we define an ``initial_color`` variable under ``defaults`` in our pattern. Variables defined here are the ones that we are going to be able to modify with data attributes from our HTML, so if you plan on developing a reusable pattern that you can use on several ways, this is the way to do it.
+
+In our example, if we change our HTML as follows::
+
+    <div class="pat-mypattern" data-pat-mypattern="initial_color:blue;">
+        <p id="target">This will get a background color</p>
+        <button id="trigger">Press me!</button>
+    </div>
+
+Then, instead of our paragraph starting as ``red``, it will first be ``blue`` and change to red when first pressing the button.
+
+As you can see, all default variables defined under ``defaults`` will be available under ``self.options``
+
+
+
