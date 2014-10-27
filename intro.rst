@@ -75,10 +75,10 @@ But Mockup is only a small layer, which is loading others' JavaScript. The
 bigger payload is the JavaScript loaded by mockup. E.g. TinyMCE, Select2, ACE
 Editor and more. OK, Web components are doing the same and Angular JS also. Web
 Components, a very promising approach which solves exactly the same problems as
-Mockup does, is a W3C draft and it's implementations only work for the very
+Mockup does, is a W3C draft and its implementations only work for the most
 modern browsers. So no IE<11 support with that. Angular JS is also a very
 interesting framework, but it changes the way you work with JavaScript quite a
-lot. Angular encourages you with pressure to use all of their concepts. What
+lot. Angular forces you to use all of their concepts. What
 sense would it make to only use Angular Directives without controllers,
 services, etc.?
 
@@ -86,7 +86,7 @@ I expect Mockup to stay relevant for Plone until Web Components are
 standardized and stable and ECMAScript 6 is implemented by all Browsers we want
 to support. That will happen, hopefully, in the near future. Then Mockup could
 be changed to be a Web Components implementation, which again uses other top
-notch, well established Frameworks to please the needs of frontend developers.
+notch, well established Frameworks to satisfy the needs of frontend developers.
 
 
 The Goals of Mockup
