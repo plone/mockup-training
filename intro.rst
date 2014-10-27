@@ -43,7 +43,7 @@ HTML class names and data attributes only. Paradise.
 
 `TODO: difference to patternslib`
 Around 2012, Mockup came to the stage. Rok Garbas, always aware about the power
-behind JavaScript, developed Mockup out of frustration on JavaScript. Mockup
+behind JavaScript, developed Mockup out of frustration with JavaScript. Mockup
 started as a fork of split-off `Patternslib` - at least it took it's idea of a
 Pattern registry. `Patternslib` was developed by Wichert Akkerman and fellows,
 including `Florian Friesdorf` with whom Rok was in intense debate about ways
