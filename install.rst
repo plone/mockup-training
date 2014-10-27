@@ -122,7 +122,7 @@ Using Bower directly
 --------------------
 
 After changes to bower.json, you don't have to run ``make bootstrap``, which
-swipes all dependencies and starts installing them all over again. You can use
+wipes all dependencies and starts installing them all over again. You can use
 bower directly::
 
     $ bower search PACKAGENAME  # search online for a package in the bower registry
