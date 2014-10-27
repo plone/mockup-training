@@ -1,7 +1,7 @@
 Agenda of the "Mastering Mockup" training
 =========================================
 
-Breaks every two hours, lunch at noon. 
+Breaks every two hours, lunch at noon.
 
 Let's see how far we come on day 1.
 
@@ -33,7 +33,7 @@ Day 1 (27-10-2014)
 Day 2 (28-10-2014)
 ------------------
 
-- Developing patterns all the time, Improving Mockup with new patterns. 
+- Developing patterns all the time, Improving Mockup with new patterns.
 
 
 

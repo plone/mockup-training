@@ -8,7 +8,7 @@ Training materials for the Mockup training.
     :maxdepth: 2
 
     about
-    agenda of this training
+    agenda-training
 
 Contents:
 
