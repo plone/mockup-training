@@ -34,10 +34,19 @@ so with a little effort, it should work!
 Installing Mockup
 -----------------
 
-Mockup is installed by cloning a git repository and run ``make bootstrap`` then::
+Mockup is installed for this training by cloning a git repository on a VM host to obtain a Vagrantfile.
+A guest VM is started with the Vagrantfile, started, and provisioned with Mockup prerequisites.
+Then a bootstrap script is run on the guest VM::
 
+    $ # The following run on the host OS:
     $ git clone https://github.com/plone/mockup.git
     $ cd mockup
+    $ vagrant up
+    $ vagrant reload
+    $ vagrant ssh
+    $ # The following run on the guest VM:
+    $ cd /vagrant
+    $ git pull
     $ make bootstrap
 
 
