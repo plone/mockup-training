@@ -9,7 +9,9 @@ The generator already creates the biolerplate for a pattern and the needed bits 
 Write the pattern
 -----------------
 
-Open the ``js/patterns/mypattern.js`` file. Its sections are already commented::
+Open the ``js/patterns/mypattern.js`` file. Its sections are already commented:
+
+.. code-block:: js
 
     define([
         'jquery',
@@ -102,7 +104,9 @@ Open ``less/myproject.less`` file in your editor and add::
 Write your pattern
 ++++++++++++++++++
 
-Open ``js/patterns/mypattern.js`` file and replace everything with::
+Open ``js/patterns/mypattern.js`` file and replace everything with:
+
+.. code-block:: js
 
     define([
         'jquery',
