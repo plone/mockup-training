@@ -60,10 +60,11 @@ Tasklist for Day 2
 Eventually, if someone is up to
 +++++++++++++++++++++++++++++++
 
-- Issues in https://github.com/plone/mockup/issues 
+- Issues in https://github.com/plone/mockup/issues
 - plone.app.widgets code and test needs to be moved to CMFPlone/plone.app packages `CMPlone#280 <https://github.com/plone/Products.CMFPlone/issues/280>`_
 - legacy js legacy import not importing correct order `CMPlone#275 <https://github.com/plone/Products.CMFPlone/issues/275>`_
 
+By the way...
++++++++++++++
 
-
-  `CMPlone#282 <https://github.com/plone/Products.CMFPlone/issues/282>`_
+These are the Plone 5 issues, part of them are Mockup related: https://github.com/plone/Products.CMFPlone/issues/184
