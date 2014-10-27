@@ -37,16 +37,16 @@ the correct order. Clubbering the global namespace is normally not necessary
 anymore. Mockup encourages us also to test all JavaScript code, and it does it
 by using well known testing frameworks which allows us to easily write unit and
 integration tests. All patterns are encapsulated and can easily be reused.
-Reusability is possible, because dependencies from JavaScript code to a
+Reusability is possible, because dependencies from JavaScript code on a
 specific DOM structure is gone. Patterns are only loaded and configured via
 HTML class names and data attributes only. Paradise.
 
 `TODO: difference to patternslib`
 Around 2012, Mockup came to the stage. Rok Garbas, always aware about the power
 behind JavaScript, developed Mockup out of frustration with JavaScript. Mockup
-started as a fork of split-off `Patternslib` - at least it took it's idea of a
+started as a fork of split-off `Patternslib` - at least it took its idea of a
 Pattern registry. `Patternslib` was developed by Wichert Akkerman and fellows,
-including `Florian Friesdorf` with whom Rok was in intense debate about ways
+including `Florian Friesdorf` with whom Rok was in intense debate about ways of
 joining efforts.
 
 Mockup stayed a seperate project, was accepted for inclusion in the Plone core
@@ -62,7 +62,7 @@ Why mockup?
 But wait, despite all of the well sounding hymns to mockup from above, aren't
 there more established alternatives?
 
-Well ... yes, there are. Mockup grew up in a world, were no of these
+Well ... yes, there are. Mockup grew up in a world were none of these
 alternatives were in sight. Now we have at least an upcoming Web Components W3C
 standards draft with concrete implementations (X-Tags, Polymer) and Angular JS
 Directives. Both of them could be used instead of Mockup.
