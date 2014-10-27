@@ -9,7 +9,7 @@ Background
 ----------
 
 Mockup grew out from searching a solution to get all JavaScript within Plone to
-a manageable, reproductable, stable and testable state.
+a manageable, reproducible, stable and testable state.
 
 Until now, JavaScript in Plone was added here and there by core modules and
 addons to the the Resource Registry of Plone. We did only have the possibility
