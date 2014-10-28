@@ -36,7 +36,9 @@ Installing Mockup
 
 Mockup is installed for this training by cloning a git repository on a VM host to obtain a Vagrantfile.
 A guest VM is started with the Vagrantfile, started, and provisioned with Mockup prerequisites.
-Then a bootstrap script is run on the guest VM::
+Then a bootstrap script is run on the guest VM:
+
+.. code-block:: bash
 
     $ # The following run on the host OS:
     $ git clone https://github.com/plone/mockup.git
@@ -59,13 +61,17 @@ You're ready to start working on testable, modular and beautiful JavaScript!
 Building the documentation and examples
 ---------------------------------------
 
-To see it in action, you must compile everything once, with::
+To see it in action, you must compile everything once, with:
+
+.. code-block:: bash
 
     $ make docs
 
-Then, start the python test server like so::
+Then, start the python test server like so:
 
-    python -m SimpleHTTPServer
+.. code-block:: bash
+
+    $ python -m SimpleHTTPServer
 
 After that, access the served site in a webbrowser via the url http://localhost:8000
 
@@ -73,15 +79,21 @@ After that, access the served site in a webbrowser via the url http://localhost:
 Running tests
 -------------
 
-Run tests with PhantomJS and continue to listen for changes::
+Run tests with PhantomJS and continue to listen for changes:
+
+.. code-block:: bash
 
     $ make test
 
-Run tests with Chrome::
+Run tests with Chrome:
+
+.. code-block:: bash
 
     $ make test-dev
 
-Or run the tests for an individual plugin::
+Or run the tests for an individual plugin:
+
+.. code-block:: bash
 
     $ make test-once pattern=select2
 
@@ -123,7 +135,9 @@ Using Bower directly
 
 After changes to bower.json, you don't have to run ``make bootstrap``, which
 wipes all dependencies and starts installing them all over again. You can use
-bower directly::
+bower directly:
+
+.. code-block:: bash
 
     $ bower search PACKAGENAME  # search online for a package in the bower registry
     $ bower list  # list all dependencies and possible updates

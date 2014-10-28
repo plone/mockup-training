@@ -61,7 +61,9 @@ Now, after this, you should see the message ``Your Pattern "mypattern" works!``.
 2) Use Python's SimpleHTTPServer
 ++++++++++++++++++++++++++++++++
 
-In the project root, start Python's SimpleHTTPServer like so::
+In the project root, start Python's SimpleHTTPServer like so:
+
+.. code-block:: bash
 
     $ python -m SimpleHTTPServer 8000
 
@@ -74,12 +76,16 @@ Let's make something interesting
 Add some HTML
 +++++++++++++
 
-Open ``dev/dev.html`` file in your editor and replace::
+Open ``dev/dev.html`` file in your editor and replace:
+
+.. code-block:: html
 
     <div class="pat-mypattern">
     </div>
 
-with::
+with:
+
+.. code-block:: html
 
     <div class="pat-mypattern">
         <p id="target">This will get a background color</p>
@@ -90,7 +96,9 @@ with::
 Add some CSS
 ++++++++++++
 
-Open ``less/myproject.less`` file in your editor and add::
+Open ``less/myproject.less`` file in your editor and add:
+
+.. code-block:: css
 
     .red-background {
         background-color: red;
@@ -167,7 +175,9 @@ Defining initial default values
 
 As we seen before, we define an ``initial_color`` variable under ``defaults`` in our pattern. Variables defined here are the ones that we are going to be able to modify with data attributes from our HTML, so if you plan on developing a reusable pattern that you can use on several ways, this is the way to do it.
 
-In our example, if we change our HTML as follows::
+In our example, if we change our HTML as follows:
+
+.. code-block:: html
 
     <div class="pat-mypattern" data-pat-mypattern="initial_color:blue;">
         <p id="target">This will get a background color</p>

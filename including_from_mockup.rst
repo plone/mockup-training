@@ -10,7 +10,9 @@ Assume the following HTML
 -------------------------
 
 This step is not really needed in order to include a dependency, we will use it just as an example.
-Let's say you have the following HTML::
+Let's say you have the following HTML:
+
+.. code-block:: html
 
     <table border="1" style="text-align:center;">
         <thead>
@@ -55,11 +57,15 @@ You can include this in your ``dev/dev.html`` file from your project. Now, if yo
 Pick the pattern to use
 -----------------------
 
-For this excercise, we will pick the `Table Sorter <http://plone.github.io/mockup/dev/#pattern/tablesorter>`_ pattern. To use it, we need to add a special css class ``pat-tablesorter`` to the HTML snippet we have, so replace::
+For this excercise, we will pick the `Table Sorter <http://plone.github.io/mockup/dev/#pattern/tablesorter>`_ pattern. To use it, we need to add a special css class ``pat-tablesorter`` to the HTML snippet we have, so replace:
+
+.. code-block:: html
 
     <table border="1" style="text-align:center;">
 
-with::
+with:
+
+.. code-block:: html
 
     <table border="1" style="text-align:center;" class="pat-tablesorter">
 
@@ -70,7 +76,9 @@ Now refresh your browser. You will see that nothing has changed, and you still c
 Include the dependency in your bundle
 -------------------------------------
 
-Now that we know the internal name for the pattern we want to use, let's include it in our bundle. Go to your project directory, and open ``js/bundles/myproject.js``. You will notice a section as follows::
+Now that we know the internal name for the pattern we want to use, let's include it in our bundle. Go to your project directory, and open ``js/bundles/myproject.js``. You will notice a section as follows:
+
+.. code-block:: js
 
     define([
         'jquery',
@@ -86,7 +94,9 @@ Now that we know the internal name for the pattern we want to use, let's include
 Just edit this list, and include our dependency.
 Friendly reminder: Be aware that this is a Javascript list, and as such it should NOT include a comma at the end of the last item.
 
-That section should now look as follows::
+That section should now look as follows:
+
+.. code-block:: js
 
     define([
         'jquery',
@@ -112,8 +122,8 @@ We have seen a very basic example of a small pattern that doesn't need much. Let
 Consider the following HTML
 +++++++++++++++++++++++++++
 
-::
-    
+.. code-block:: html
+
     <div>
         <h1>Title 1</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ultrices <br/> tempus purus vel condimentum. Nulla in tortor <br/> sit amet ex tincidunt gravida ut eget ante. </p>
@@ -128,7 +138,9 @@ Consider the following HTML
         <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
     </div>
 
-We will now try to use the "Autotoc" pattern, so again, we search for its internal name in the ``config.js`` file, and include it as dependency in our bundle. So replace::
+We will now try to use the "Autotoc" pattern, so again, we search for its internal name in the ``config.js`` file, and include it as dependency in our bundle. So replace:
+
+.. code-block:: js
 
     define([
         'jquery',
@@ -142,7 +154,9 @@ We will now try to use the "Autotoc" pattern, so again, we search for its intern
     ], function($, Registry, Base) {
         'use strict';
 
-With::
+With:
+
+.. code-block:: js
 
     define([
         'jquery',
@@ -157,7 +171,9 @@ With::
     ], function($, Registry, Base) {
         'use strict';
 
-And add the proper class to the outer div of our example, so it will look like this::
+And add the proper class to the outer div of our example, so it will look like this:
+
+.. code-block:: html
 
     <div class="pat-autotoc">
         <h1>Title 1</h1>
@@ -179,7 +195,9 @@ After refreshing your browser, you can see that the TOC has been generated, but 
 Include less
 ++++++++++++
 
-Open ``less/myproject.less`` file and add this line to the end of it::
+Open ``less/myproject.less`` file and add this line to the end of it:
+
+.. code-block:: css
 
     @import "../bower_components/plone-mockup/patterns/autotoc/pattern.autotoc.less";
 
@@ -189,7 +207,9 @@ Now refresh again, and you will see your TOC has a default styling applied.
 Configure the pattern
 +++++++++++++++++++++
 
-As a final excercise, this pattern allows configuration to be passed from the HTML, so let's make the duration of the movement to be fast and to only include h1 and h2 in the TOC::
+As a final excercise, this pattern allows configuration to be passed from the HTML, so let's make the duration of the movement to be fast and to only include h1 and h2 in the TOC:
+
+.. code-block:: html
 
     <div class="pat-autotoc" data-pat-autotoc="scrollDuration:fast;levels:h1,h2;">
         <h1>Title 1</h1>

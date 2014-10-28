@@ -14,9 +14,11 @@ System wide installation
 If you feel comfortable installing packages in your system, all you need for using the generator is `npm <http://npm.com>`_ and `yo <https://github.com/yeoman/yo>`_.
 If you're on Ubuntu :
 
-    * sudo apt-get install npm nodejs-legacy
-    * npm install -g yo
-    * npm install -g generator-plonemockup
+.. code-block:: bash
+
+    $ sudo apt-get install npm nodejs-legacy
+    $ npm install -g yo
+    $ npm install -g generator-plonemockup
 
 
 Using Vagrant
@@ -24,9 +26,11 @@ Using Vagrant
 
 This is a fantastic alternative, if you don't want to pollute your system installing dozens of packages. It will create a virtual environment using Ubuntu 14.04, install all the needed dependencies, such as npm, less, grunt, and so on... so you don't have to bother about it.
 
-Just pull the development version of the generator::
+Just pull the development version of the generator:
 
-    git clone git@github.com:collective/generator-plonemockup.git
+.. code-block:: bash
+
+    $ git clone git@github.com:collective/generator-plonemockup.git
 
 The relevant files are "Vagrantfile" and "provision.sh". Understanding and using Vagrant is out of this document scope. For now, all you need to care about is running any of the following commands inside the directory you have just cloned, that holds the Vagrantfile:
 
@@ -73,7 +77,9 @@ Make sure you run "vagrant ssh" to login to your virtual environment. When insid
 
 the /vagrant directory will be our working directory, and is the same as the directory outside the virtual environment.
 
-So, if you::
+So, if you:
+
+.. code-block:: bash
 
     vagrant@mockup-generator:~$ cd /vagrant/
     vagrant@mockup-generator:/vagrant$ ls
@@ -86,7 +92,9 @@ Go to /vagrant and create a directory for your project, we'll call it "myproject
 Common steps
 ++++++++++++
 
-From this point on, instructions are the same either you are running vagrant or not::
+From this point on, instructions are the same either you are running vagrant or not:
+
+.. code-block:: bash
 
     $ cd myproject/
     $ yo plonemockup
@@ -202,7 +210,9 @@ In case you add new patterns, libraries, or need to tweak some paths, this is th
 Compiling and testing
 ---------------------
 
-Once developing is done and you want to compile your work, just go to your project's root directory and run 'make'::
+Once developing is done and you want to compile your work, just go to your project's root directory and run 'make':
+
+.. code-block:: bash
 
     $ make
 
