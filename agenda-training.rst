@@ -44,15 +44,15 @@ Tasklist for Day 2
 
     - [ ] cookie_functions `CMPlone#282 <https://github.com/plone/Products.CMFPlone/issues/282>`_
     - [ ] inline_validation `CMPlone#282 <https://github.com/plone/Products.CMFPlone/issues/282>`_
-    - [ ] jquery.highlightsearchterms `CMPlone#282 <https://github.com/plone/Products.CMFPlone/issues/282>`_
+    - [giacamo] jquery.highlightsearchterms `CMPlone#282 <https://github.com/plone/Products.CMFPlone/issues/282>`_
     - [ ] js-standards `CMPlone#282 <https://github.com/plone/Products.CMFPlone/issues/282>`_
     - [ ] kss-bbb `CMPlone#282 <https://github.com/plone/Products.CMFPlone/issues/282>`_
-    - [ ] livesearch `CMPlone#282 <https://github.com/plone/Products.CMFPlone/issues/282>`_
+    - [alessandro] livesearch `CMPlone#282 <https://github.com/plone/Products.CMFPlone/issues/282>`_
     - [ ] login `CMPlone#282 <https://github.com/plone/Products.CMFPlone/issues/282>`_
-    - [ ] mark_special_links `CMPlone#282 <https://github.com/plone/Products.CMFPlone/issues/282>`_
+    - [fulvio, agitator] mark_special_links `CMPlone#282 <https://github.com/plone/Products.CMFPlone/issues/282>`_
     - [ ] popupforms `CMPlone#282 <https://github.com/plone/Products.CMFPlone/issues/282>`_
     - [ ] table_sorter `CMPlone#282 <https://github.com/plone/Products.CMFPlone/issues/282>`_
-    - [ ] unlockOnFormUnload `CMPlone#282 <https://github.com/plone/Products.CMFPlone/issues/282>`_
+    - [andrea] unlockOnFormUnload `CMPlone#282 <https://github.com/plone/Products.CMFPlone/issues/282>`_
 
 - Make sure correct widgets from plone.app.widgets are used for dublin core fields `CMPlone#281 <https://github.com/plone/Products.CMFPlone/issues/281>`_
 - content rules javascript broken on plone 5 `CMPlone#279 <https://github.com/plone/Products.CMFPlone/issues/279>`_
