@@ -68,3 +68,20 @@ By the way...
 +++++++++++++
 
 These are the Plone 5 issues, part of them are Mockup related: https://github.com/plone/Products.CMFPlone/issues/184
+
+
+Archivements
+++++++++++++
+
+Eric: working on ABCJS
+Adrian: working on checkbox slider pattern
+Lewis: working on foundation framework accodrion plugin
+Arno: working on isotope
+Andrea: working on UnlockOnFormUnload pattern
+Alessandro: working on livesearch pattern
+Giacamo: working on highlightsearchterms
+Peter and Fulvio: working on mark_special_links
+chris: working on pattern integration into plone
+
+
+
