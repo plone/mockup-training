@@ -20,7 +20,7 @@ materials) was stolen from Philip Bauer's and Patrick Gerken's `Mastering Plone
     Github and readthedocs.
 
 This training materials are available on `Github
-<https://github.com/plone/mockup-training>`_ and readthedocs (To be done).
+<https://github.com/plone/mockup-training>`_ and  `Readthedocs <https://mockup-training.readthedocs.org/>`_.
 
 
 Trainers
