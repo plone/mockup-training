@@ -41,13 +41,13 @@ Reusability is possible, because dependencies from JavaScript code on a
 specific DOM structure is gone. Patterns are only loaded and configured via
 HTML class names and data attributes only. Paradise.
 
-`TODO: difference to patternslib`
-Around 2012, Mockup came to the stage. Rok Garbas, always aware about the power
-behind JavaScript, developed Mockup out of frustration with JavaScript. Mockup
-started as a fork of split-off `Patternslib` - at least it took its idea of a
-Pattern registry. `Patternslib` was developed by Wichert Akkerman and fellows,
-including `Florian Friesdorf` with whom Rok was in intense debate about ways of
-joining efforts.
+`TODO: difference to patternslib` Around 2012, Mockup came to the stage. Rok
+Garbas, always aware about the power behind JavaScript, developed Mockup out of
+frustration with JavaScript. Mockup started as a fork of split-off
+`Patternslib` - at least it took its idea of a Pattern registry. `Patternslib`
+was developed by Cornelis Kolbach, Wichert Akkerman and fellows, including
+Florian Friesdorf with whom Rok was in intense debate about ways of joining
+efforts.
 
 Mockup stayed a seperate project, was accepted for inclusion in the Plone core
 by the Framework Team in 2013 and is one big part of the upcoming Plone 5.
