@@ -89,8 +89,8 @@ with:
 .. code-block:: html
 
     <div class="pat-mypattern">
-        <p id="target">This will get a background color</p>
-        <button id="trigger">Press me!</button>
+        <p class="target">This will get a background color</p>
+        <button class="trigger">Press me!</button>
     </div>
 
 
@@ -132,23 +132,23 @@ Open ``js/patterns/mypattern.js`` file and replace everything with:
 
         change_color: function ($this) {
             var self = this;
-            self.$el.find('p#target').removeClass(self.$current_color+'-background');
+            self.$el.find('p.target').removeClass(self.$current_color+'-background');
             if ( self.$current_color === 'red' ){
                 self.$current_color = 'blue';
             }
             else {
                 self.$current_color = 'red';
             }
-            self.$el.find('p#target').addClass(self.$current_color+'-background');
+            self.$el.find('p.target').addClass(self.$current_color+'-background');
         },
 
         init: function() {
             var self = this;
-            self.$el.find('button#trigger').on('click', function(e) {
+            self.$el.find('button.trigger').on('click', function(e) {
                 self.change_color();
             });
             self.$current_color = self.options.initial_color;
-            self.$el.find('p#target').addClass(self.$current_color+'-background');
+            self.$el.find('p.target').addClass(self.$current_color+'-background');
         }
     });
 
@@ -190,4 +190,38 @@ Then, instead of our paragraph starting as ``red``, it will first be ``blue`` an
 As you can see, all default variables defined under ``defaults`` will be available under ``self.options``
 
 
+Isolation
+---------
+
+One great thing about patterns, is that they only affect the HTML code where they were applied. For this, you should always work with the ``self.$el`` element, as we did in our example.
+In order to understand this idea better, open your ``dev/dev.html`` file again, and replace:
+
+.. code-block:: html
+
+    <div class="pat-mypattern">
+        <p class="target">This will get a background color</p>
+        <button class="trigger">Press me!</button>
+    </div>
+
+With:
+
+.. code-block:: html
+
+    <div class="pat-mypattern">
+        <p class="target">This will start with a red background color</p>
+        <button class="trigger">Press me!</button>
+    </div>
+
+    <div>
+        <p class="target">This will get no background color</p>
+        <button class="trigger">Press me!</button>
+    </div>
+
+    <div class="pat-mypattern" data-pat-mypattern="initial_color:blue;">
+        <p class="target">This will start with a blue background color</p>
+        <button class="trigger">Press me!</button>
+    </div>
+
+
+If you now refresh your browser, you'll see that, even though we did no changes to the javascript code, and just by defining some classes and data attributes, we can change the functionality, but have it be specific to a portion of the HTML.
 
