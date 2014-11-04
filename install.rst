@@ -2,27 +2,28 @@ Installation and Bootstrapping
 ==============================
 
 
+Normal Installation
+-------------------
+
+The normal way to install `Mockup` is to directly install it to your system,
+using the system's `Node` version and other tools. If this is not possible,
+because you are using Windows or don't want to pollute your System with
+libraries not necessarily needed, use the :ref:`vagrant_installation` method.
+
 Prerequisites
--------------
+~~~~~~~~~~~~~
 
-To build and hack on Mockup you will need recent versions of git, node, npm, PhantomJS and make.
+To build and hack on Mockup you will need recent versions of ``git``, ``node``,
+``npm``, ``PhantomJS`` and ``make``.
 
-Right now development of this project is being done primarily on Linux and OS X,
-so setting up the tooling on MS Windows might be an adventure for you to explore --
-though, all of the tools used have equivalent versions for that platform,
-so with a little effort, it should work!
-
-* Node 0.10 or up (Installation via `package manager
+- Installing Node: You need to have Node 0.10 or newer. Normally, NPM is
+  installed together with node. For installation instructions see `Installation
+  via package manager
   <https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager>`_
-  or by `building <https://github.com/joyent/node/wiki/Installation>`_).
+  or `Building Node <https://github.com/joyent/node/wiki/Installation>`_.
 
-
-* PhantomJS (Use your package manager or `download and install
-  <http://phantomjs.org/download.html>`_).
-
-
-* Make
-
+- Installing PhantomJS: Use your package manager or `download and
+  install <http://phantomjs.org/download.html>`_).
 
 .. note::
     There is a useful tool, which helps you to install different versions of
@@ -30,13 +31,55 @@ so with a little effort, it should work!
     <https://github.com/creationix/nvm>`_, ``nvm``. Try it, if you run into
     problems with your system's Node version.
 
+Right now development of this project is being done primarily on Linux and OS X,
+so setting up the tooling on MS Windows might be an adventure for you to explore --
+though, all of the tools used have equivalent versions for that platform,
+so with a little effort, it should work!
+
 
 Installing Mockup
------------------
+~~~~~~~~~~~~~~~~~
 
-Mockup is installed for this training by cloning a git repository on a VM host to obtain a Vagrantfile.
-A guest VM is started with the Vagrantfile, started, and provisioned with Mockup prerequisites.
-Then a bootstrap script is run on the guest VM:
+Installing `Mockup` is as easy as cloning and then running `make bootstrap`::
+
+    $ git clone https://github.com/plone/mockup.git
+    $ cd mockup
+    $ make bootstrap
+
+This bootstraps the whole application. It cleans up the directory and installs
+node and bower dependencies.
+
+
+.. _vagrant_installation:
+
+Installing Mockup with Vagrant
+------------------------------
+
+Vagrant can be a great choice, if you don't want to install Mockup and it's
+dependencies directly to your machine, possibly polluting your environment
+(but normally, Mockup doesn't install anything globally). Vagrant is also a
+great choice, if you want to provide the same environment for every developer.
+Therefore we choosed it as the recommended installation method for our Mockup
+training.
+
+With this method, Mockup is installed by cloning a git repository on a VM host
+to obtain a Vagrantfile.  A guest VM (Ubuntu) is started with the Vagrantfile
+and provisioned with Mockup prerequisites.  Then a bootstrap script is run on
+the guest VM. Follow these steps:
+
+1. Install VirtualBox: https://www.virtualbox.org. Use your system's package
+   manager, if you have one. 
+
+2. Install Vagrant: http://www.vagrantup.com. If you have such a thing
+   like a system package manager, I recommend to use it only, if it includes a
+   recent version of Vagrant.
+
+3. If you are using Windows, install the Putty ssh kit:
+   http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html. Install all
+   the binaries, or at least putty.exe and plink.exe.
+
+
+Now we can install Mockup itself:
 
 .. code-block:: bash
 
@@ -44,22 +87,51 @@ Then a bootstrap script is run on the guest VM:
     $ git clone https://github.com/plone/mockup.git
     $ cd mockup
     $ vagrant up
+
+Now, go for lunch or a long coffee break. "vagrant up" is going to download a
+virtual box kit (unless you already happen to have a match    Windows, it will
+also generate an ssh key pair that's usable with Putty.
+
+.. note::
+    While running "vagrant up", feel free to ignore messages like "stdin: is
+    not a tty" and "warning: Could not retrieve fact fqdn". They have no
+    significance in this context.
+
+Look to see if the install ran well. The virtual machine should be running at
+this point:
+
+.. code-block:: bash
+
     $ vagrant reload
     $ vagrant ssh
+
+
+Now you are logged into your virtual machine:
+
+.. code-block:: bash
+
     $ # The following run on the guest VM:
     $ cd /vagrant
     $ git pull
     $ make bootstrap
-
 
 Now you have the complete source code for all Patterns from Mockup.
 From here on you generate bundles of common functionality and minify them.
 
 You're ready to start working on testable, modular and beautiful JavaScript!
 
+.. note::
+    Parts of this instructions are based on the `plonedev.vagrant README.rst
+    <https://github.com/plone/plonedev.vagrant/blob/master/README.rst>`_. Have
+    a look for it, if you need more information and troubleshooting
+    instructions.
+
+
+Working with Mockup
+-------------------
 
 Building the documentation and examples
----------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 To see it in action, you must compile everything once, with:
 
@@ -77,7 +149,7 @@ After that, access the served site in a webbrowser via the url http://localhost:
 
 
 Running tests
--------------
+~~~~~~~~~~~~~
 
 Run tests with PhantomJS and continue to listen for changes:
 
@@ -101,7 +173,7 @@ Or run the tests for an individual plugin:
 .. _makefile-commands:
 
 More Makefile commands
-----------------------
+~~~~~~~~~~~~~~~~~~~~~~
 
 The ``Makefile`` provides this list of commands::
 
@@ -131,7 +203,7 @@ help with debugging by changing the verbosity of the log messages.
 
 
 Using Bower directly
---------------------
+~~~~~~~~~~~~~~~~~~~~
 
 After changes to bower.json, you don't have to run ``make bootstrap``, which
 wipes all dependencies and starts installing them all over again. You can use
@@ -148,14 +220,26 @@ For more information, see the `bower API documentation <http://bower.io/docs/api
 
 
 Including a local mockup-core checkout for developing
------------------------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-If you want to also hack on mockup-core together with mockup, you should
-include it from a local checkout. Bower allows to point to a ``.git`` directory
-for referencing local repositories. Just replace the ``mockup-core`` dependency
-in ``bower.json`` with::
+If you want to also hack on `mockup-core
+<https://github.com/plone/mockup-core>`_ together with mockup, clone
+mockup-core into a directory on your machine and just symlink it into
+bower_components::
 
-    "mockup-core": "file:///PATH/TO/mockup-core/.git/#BRANCHNAME"
+    $ cd ..
+    $ git clone https://github.com/plone/mockup-core
+    $ cd mockup/bower_components
+    $ rm -R mockup-core
+    $ ln -s ../../mockup-core .
 
-Please note, you have to commit any changes on mockup-core and then run ``bower
-install``, ``bower update`` or ``make bootstrap`` in mockup again.
+.. note::
+    You can also point bower.json to a local git checkout. You have to point
+    bower directly to the `.git` subdirectory and declare the branchname in
+    order to be able to use a local checkout. For that, replace the
+    `mockup-core` line in `bower.json` with something like the following::
+
+        "mockup-core": "file:///PATH/TO/mockup-core/.git/#master"
+
+    Please note, you have to commit any changes on mockup-core and then run
+    ``bower install``, ``bower update`` or ``make bootstrap`` in mockup again.

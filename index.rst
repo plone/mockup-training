@@ -17,7 +17,6 @@ Contents:
     :numbered: 1
 
     intro
-    install-vagrant
     install
     overview
     create_your_own
