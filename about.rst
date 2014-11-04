@@ -66,7 +66,7 @@ presentation
 
 
 The readthedocs-theme
-+++++++++++++++++++++
+~~~~~~~~~~~~~~~~~~~~~
 
 We slightly tweaked readthedocs-theme in ``_static/custom.css`` so that it works better with projectors:
 
@@ -74,7 +74,7 @@ We slightly tweaked readthedocs-theme in ``_static/custom.css`` so that it works
 - We enlarge the default width of the content-area.
 
 Excercises
-++++++++++
+~~~~~~~~~~
 
 Some additional javascript shows hidden solutions for exercises by clicking.
 
@@ -117,7 +117,7 @@ Your mission, should you choose to accept it...
 
 
 Building the documentation locally
-++++++++++++++++++++++++++++++++++
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 To build the documentation follow these steps:
 

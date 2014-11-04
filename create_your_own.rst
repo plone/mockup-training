@@ -9,7 +9,7 @@ Dependencies
 
 
 System wide installation
-++++++++++++++++++++++++
+~~~~~~~~~~~~~~~~~~~~~~~~
 
 If you feel comfortable installing packages in your system, all you need for using the generator is `npm <http://npm.com>`_ and `yo <https://github.com/yeoman/yo>`_.
 If you're on Ubuntu :
@@ -22,7 +22,7 @@ If you're on Ubuntu :
 
 
 Using Vagrant
-+++++++++++++
+~~~~~~~~~~~~~
 
 This is a fantastic alternative, if you don't want to pollute your system installing dozens of packages. It will create a virtual environment using Ubuntu 14.04, install all the needed dependencies, such as npm, less, grunt, and so on... so you don't have to bother about it.
 
@@ -65,13 +65,13 @@ Creating your project
 We will now create our first project
 
 Without using Vagrant
-+++++++++++++++++++++
+~~~~~~~~~~~~~~~~~~~~~
 
 Just create a directory where your project will be. We'll call it "myproject". Inside this directory we can run our generator.
 
 
 Using Vagrant
-+++++++++++++
+~~~~~~~~~~~~~
 
 Make sure you run "vagrant ssh" to login to your virtual environment. When inside, you will be user "vagrant", which has full sudo privileges inside that machine.
 
@@ -90,7 +90,7 @@ Go to /vagrant and create a directory for your project, we'll call it "myproject
 
 
 Common steps
-++++++++++++
+~~~~~~~~~~~~
 
 From this point on, instructions are the same either you are running vagrant or not:
 
@@ -152,7 +152,7 @@ This will assume we have named our project 'myproject' and our pattern, 'mypatte
 
 
 Structure
-+++++++++
+~~~~~~~~~
 
 The newly created package, has the full structure of files and directories ready for start developing::
 
@@ -177,32 +177,32 @@ The newly created package, has the full structure of files and directories ready
 
 
 The 'dev' directory
-+++++++++++++++++++
+~~~~~~~~~~~~~~~~~~~
 
 This is a helper folder. It provides a dev.html which already includes a basic html to start developing your pattern and includes the needed javascript files. The 'dev.js' file is the one that loads your bundle and pattern(s) automatically so you can start developing right away.
 
 
 The 'js' directory
-++++++++++++++++++
+~~~~~~~~~~~~~~~~~~
 
 This is where your bundle and pattern(s) will be located.
 You will be working mostly in js/patterns/mypattern.js if you are developing a new pattern, or in js/bundles/myproject.js if you are bringing additional patterns from mockup.
 
 
 The 'less' directory
-++++++++++++++++++++
+~~~~~~~~~~~~~~~~~~~~
 
 This is where you will include the less files for your project
 
 
 The 'tests' directory
-+++++++++++++++++++++
+~~~~~~~~~~~~~~~~~~~~~
 
 This is where automated tests for your patterns will be written (And of course you will write them ;) )
 
 
 config.js
-+++++++++
+~~~~~~~~~
 
 In case you add new patterns, libraries, or need to tweak some paths, this is the file where you should do that.
 

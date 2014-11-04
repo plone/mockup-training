@@ -58,20 +58,20 @@ Tasklist for Day 2
 - content rules javascript broken on plone 5 `CMPlone#279 <https://github.com/plone/Products.CMFPlone/issues/279>`_
 
 Eventually, if someone is up to
-+++++++++++++++++++++++++++++++
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 - Issues in https://github.com/plone/mockup/issues
 - plone.app.widgets code and test needs to be moved to CMFPlone/plone.app packages `CMPlone#280 <https://github.com/plone/Products.CMFPlone/issues/280>`_
 - legacy js legacy import not importing correct order `CMPlone#275 <https://github.com/plone/Products.CMFPlone/issues/275>`_
 
 By the way...
-+++++++++++++
+~~~~~~~~~~~~~
 
 These are the Plone 5 issues, part of them are Mockup related: https://github.com/plone/Products.CMFPlone/issues/184
 
 
 Archivements
-++++++++++++
+~~~~~~~~~~~~
 
 Eric: working on ABCJS
 Adrian: working on checkbox slider pattern
@@ -82,6 +82,3 @@ Alessandro: working on livesearch pattern
 Giacamo: working on highlightsearchterms
 Peter and Fulvio: working on mark_special_links
 chris: working on pattern integration into plone
-
-
-

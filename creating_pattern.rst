@@ -46,7 +46,7 @@ See it in action
 There are two ways of seeing the pattern through the web:
 
 1) Open it in a browser
-+++++++++++++++++++++++
+~~~~~~~~~~~~~~~~~~~~~~~
 
 The best way to understand how all this works is to see it working. Open ``dev/dev.html`` in your browser
 
@@ -59,7 +59,7 @@ This is a security feature. To go around it in chrome, you need to start it with
 Now, after this, you should see the message ``Your Pattern "mypattern" works!``. This is because the patter we have just created does this in its ``init`` class ( ``self.$el.append('<p>Your Pattern "' + self.name + '" works!</p>');`` ) where, ``self.$el`` is the HTML element which loads the pattern.
 
 2) Use Python's SimpleHTTPServer
-++++++++++++++++++++++++++++++++
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 In the project root, start Python's SimpleHTTPServer like so:
 
@@ -74,7 +74,7 @@ Let's make something interesting
 --------------------------------
 
 Add some HTML
-+++++++++++++
+~~~~~~~~~~~~~
 
 Open ``dev/dev.html`` file in your editor and replace:
 
@@ -94,7 +94,7 @@ with:
 
 
 Add some CSS
-++++++++++++
+~~~~~~~~~~~~
 
 Open ``less/myproject.less`` file in your editor and add:
 
@@ -110,7 +110,7 @@ Open ``less/myproject.less`` file in your editor and add:
 
 
 Write your pattern
-++++++++++++++++++
+~~~~~~~~~~~~~~~~~~
 
 Open ``js/patterns/mypattern.js`` file and replace everything with:
 

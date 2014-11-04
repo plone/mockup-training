@@ -120,7 +120,7 @@ We have seen a very basic example of a small pattern that doesn't need much. Let
 
 
 Consider the following HTML
-+++++++++++++++++++++++++++
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: html
 
@@ -193,7 +193,7 @@ After refreshing your browser, you can see that the TOC has been generated, but 
 
 
 Include less
-++++++++++++
+~~~~~~~~~~~~
 
 Open ``less/myproject.less`` file and add this line to the end of it:
 
@@ -205,7 +205,7 @@ Now refresh again, and you will see your TOC has a default styling applied.
 
 
 Configure the pattern
-+++++++++++++++++++++
+~~~~~~~~~~~~~~~~~~~~~
 
 As a final excercise, this pattern allows configuration to be passed from the HTML, so let's make the duration of the movement to be fast and to only include h1 and h2 in the TOC:
 
