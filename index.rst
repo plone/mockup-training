@@ -18,6 +18,7 @@ Contents:
 
     intro
     install
+    working_with_mockup
     overview
     create_your_own
     creating_pattern
