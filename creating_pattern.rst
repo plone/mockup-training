@@ -1,7 +1,6 @@
 Creating your first pattern
 ===========================
 
-
 Now that you have generated your first package, we will be creating a pattern.
 The generator already creates the biolerplate for a pattern and the needed bits to use it, so we will be just adding code to it.
 

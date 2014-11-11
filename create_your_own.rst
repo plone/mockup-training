@@ -1,7 +1,12 @@
 Create your own mockup project
 ==============================
 
-As seen earlier in this training, one alternative to work with Mockup, is to pull the complete source from github, do your changes, removals and modifications and finally compile. This process, has obvious disadvantages, and for this, we have created a `generator <https://github.com/collective/generator-plonemockup>`_ that allows you to generate the bare minimum you need to start your project.
+As seen earlier in this training, one alternative to work with Mockup, is to
+pull the complete source from github, do your changes, removals and
+modifications and finally compile. This process, has obvious disadvantages, and
+for this, we have created a `generator
+<https://github.com/collective/generator-plonemockup>`_ that allows you to
+generate the bare minimum you need to start your project.
 
 
 Dependencies
@@ -21,44 +26,6 @@ If you're on Ubuntu :
     $ npm install -g generator-plonemockup
 
 
-Using Vagrant
-~~~~~~~~~~~~~
-
-This is a fantastic alternative, if you don't want to pollute your system installing dozens of packages. It will create a virtual environment using Ubuntu 14.04, install all the needed dependencies, such as npm, less, grunt, and so on... so you don't have to bother about it.
-
-Just pull the development version of the generator:
-
-.. code-block:: bash
-
-    $ git clone git@github.com:collective/generator-plonemockup.git
-
-The relevant files are "Vagrantfile" and "provision.sh". Understanding and using Vagrant is out of this document scope. For now, all you need to care about is running any of the following commands inside the directory you have just cloned, that holds the Vagrantfile:
-
-- ``vagrant up``
-
-    This command start the virtual environment. When running it for the first time it will install and configure all needed packages.
-    NOTE: Some of the output will be in red, this is normal.
-
-- ``vagrant reload``
-
-    This command will make the virtual environment to restart. You need to do this the first time
-
-- ``vagrant ssh``
-
-    Once the virtual environment is up and running, this command will ssh into the machine. This is like ssh'ing into any computer, all you need to do to exit is "Ctrl + D"
-
-- ``vagrant halt``
-
-    This command will turn off the virtual machine, issuing an ACPI shutdown, so it's safe to use it at any time.
-
-- ``vagrant destroy``
-
-    This command will destroy the virtual environment. Be aware that this will remove the entire virtual machine, be aware when using it.
-
-
-For additional reading, go to `Vagrant homepage <https://www.vagrantup.com/>`_.
-
-
 Creating your project
 ---------------------
 
@@ -69,13 +36,29 @@ Without using Vagrant
 
 Just create a directory where your project will be. We'll call it "myproject". Inside this directory we can run our generator.
 
-
 Using Vagrant
 ~~~~~~~~~~~~~
 
-Make sure you run "vagrant ssh" to login to your virtual environment. When inside, you will be user "vagrant", which has full sudo privileges inside that machine.
+Just pull the development version of the generator:
 
-the /vagrant directory will be our working directory, and is the same as the directory outside the virtual environment.
+.. code-block:: bash
+
+    $ git clone git@github.com:collective/generator-plonemockup.git
+
+The relevant files are "Vagrantfile" and "provision.sh". Understanding and
+using Vagrant is out of this document scope. For now, all you need to care
+about is running any of the following commands inside the directory you have
+just cloned, that holds the Vagrantfile:
+
+- ``vagrant up``
+
+
+Make sure you run "vagrant ssh" to login to your virtual environment. When
+inside, you will be user "vagrant", which has full sudo privileges inside that
+machine.
+
+the /vagrant directory will be our working directory, and is the same as the
+directory outside the virtual environment.
 
 So, if you:
 

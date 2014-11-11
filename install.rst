@@ -55,6 +55,11 @@ node and bower dependencies.
 Installing Mockup with Vagrant
 ------------------------------
 
+Vagrant is a scripting environment for virtual machine hosts like VritualBox.
+There are two configuration files, ``Vagrantfile`` and ``provision.sh`` which
+are used to bootstrap a whole system including any dependencies, which should
+be installed on the guest system.
+
 Vagrant can be a great choice, if you don't want to install Mockup and it's
 dependencies directly to your machine, possibly polluting your environment
 (but normally, Mockup doesn't install anything globally). Vagrant is also a
@@ -62,9 +67,10 @@ great choice, if you want to provide the same environment for every developer.
 Therefore we choosed it as the recommended installation method for our Mockup
 training.
 
-With this method, Mockup is installed by cloning a git repository on a VM host
-to obtain a Vagrantfile.  A guest VM (Ubuntu) is started with the Vagrantfile
-and provisioned with Mockup prerequisites.  Then a bootstrap script is run on
+With this method, Mockup is installed by installing a virtual machine with
+Vagrant by using the ``Vagrantfile`` and ``provision.sh`` files, which are
+included in Mockup. A guest VM (Ubuntu 14.04) is started with the Vagrantfile
+and provisioned with Mockup prerequisites. Then a bootstrap script is run on
 the guest VM. Follow these steps:
 
 1. Install VirtualBox: https://www.virtualbox.org. Use your system's package
@@ -126,3 +132,39 @@ You're ready to start working on testable, modular and beautiful JavaScript!
     a look for it, if you need more information and troubleshooting
     instructions.
 
+
+Using Vagrant
+~~~~~~~~~~~~~
+
+Understanding Vagrant in depth is out of this document scope. The most
+important commands for using vagrant are listed below.
+
+- ``vagrant up``
+
+    This command start the virtual environment. When running it for the first
+    time it will install and configure all needed packages.  NOTE: Some of the
+    output will be in red, this is normal.
+
+- ``vagrant reload``
+
+    This command will make the virtual environment to restart. You need to do
+    this the first time
+
+- ``vagrant ssh``
+
+    Once the virtual environment is up and running, this command will ssh into
+    the machine. This is like ssh'ing into any computer, all you need to do to
+    exit is "Ctrl + D"
+
+- ``vagrant halt``
+
+    This command will turn off the virtual machine, issuing an ACPI shutdown,
+    so it's safe to use it at any time.
+
+- ``vagrant destroy``
+
+    This command will destroy the virtual environment. Be aware that this will
+    remove the entire virtual machine. Be careful and know, when you're using
+    it.
+
+For additional reading, go to `Vagrant homepage <https://www.vagrantup.com/>`_.
