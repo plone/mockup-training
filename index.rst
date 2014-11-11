@@ -25,3 +25,4 @@ Contents:
     including_from_mockup
     writing-documentation
     mockup-alternatives
+    working_with_resource_registry
