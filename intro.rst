@@ -8,15 +8,15 @@ to be used by plone.app.widgets and Plone 5.
 Background
 ----------
 
-Mockup grew out from searching a solution to get all JavaScript within Plone to
+Mockup grew out from searching for a solution to get all JavaScript within Plone into
 a manageable, reproducible, stable and testable state.
 
 Until now, JavaScript in Plone was added here and there by core modules and
-addons to the the Resource Registry of Plone. It was only possible to define 
+addons to the Resource Registry of Plone. It was only possible to define 
 the order in which JavaScript resources should be loaded. The order could 
 be defined relative to another JavaScript resource. Same is valid for CSS
 resources. It was not possible to declare dependencies to other JavaScript
-resources. Either they were available, because they were loaded beforehand into
+resources. Either they were available because they were loaded beforehand into
 the global namespace, or the script threw an error. None - or rarely any - of
 the JavaScript within Plone was tested. Developers needed to know a fair amount
 of Plone developing to contribute JavaScript or CSS resources to it, such as 
@@ -26,7 +26,7 @@ developers were contributing JavaScript code. It was too hard and boring for
 Frontend developers to help out here.
 
 Plone's new theming engine ``Diazo`` solved some of the problems. But still,
-JavaScript code was untested, without a defined set of dependencies... It
+JavaScript code was untested, and without a defined set of dependencies, it
 did or did not work, often only by accident.
 
 Mockup gives us an elegant solution to all of the problems outlined above: By
@@ -34,9 +34,9 @@ using RequireJS modules (as well as the Common JS based node modules for the
 build infrastructure), we now have to declare every JavaScript dependency
 explicitly. RequireJS resolves the dependency chains and loads all resources in
 the correct order. Clubbering the global namespace is normally not necessary
-anymore. Mockup encourages us also to test all JavaScript code, and it does it
+anymore. Mockup encourages us to also test all JavaScript code, and it does it
 by using well known testing frameworks which allows us to easily write unit and
-integration tests. All patterns are encapsulated and can easily be reused.
+integration tests. All patterns are encapsulated and can be easily reused.
 Reusability is possible, because dependencies from JavaScript code on a
 specific DOM structure is gone. Patterns are only loaded and configured via
 HTML class names and data attributes only. Paradise.
@@ -49,7 +49,7 @@ was developed by Cornelis Kolbach, Wichert Akkerman and fellows, including
 Florian Friesdorf with whom Rok was in intense debate about ways of joining
 efforts.
 
-Mockup stayed a seperate project, was accepted for inclusion in the Plone core
+Mockup stayed a separate project, was accepted for inclusion in the Plone core
 by the Framework Team in 2013 and is one big part of the upcoming Plone 5.
 
 This documentation should help developers to better understand Mockup,
@@ -62,7 +62,7 @@ Why mockup?
 But wait, despite all of the well sounding hymns to mockup from above, aren't
 there more established alternatives?
 
-Well ... yes, there are. Mockup grew up in a world were none of these
+Well ... yes, there are. Mockup grew up in a world where none of these
 alternatives were in sight. Now we have at least an upcoming Web Components W3C
 standards draft with concrete implementations (X-Tags, Polymer) and Angular JS
 Directives. Both of them could be used instead of Mockup.
@@ -78,7 +78,7 @@ Components, a very promising approach which solves exactly the same problems as
 Mockup does, is a W3C draft and its implementations only work for the most
 modern browsers. So no IE<11 support with that. Angular JS is also a very
 interesting framework, but it changes the way you work with JavaScript quite a
-lot. Angular forces you to use all of their concepts. What
+bit. Angular forces you to use all of their concepts. What
 sense would it make to only use Angular Directives without controllers,
 services, etc.?
 
@@ -146,7 +146,7 @@ quite common among JavaScript developers. This toolset includes:
 As always, some of these technologies can be discussed controversially. There
 are other options for package management, build infrastructure, declaring
 dependencies, preprocessing CSS - nearly for each aspect of Mockup. JavaScript
-has an insanely fast moving ecosystem. Furtunately, many Frameworks are quite
+has an insanely fast moving ecosystem. Fortunately, many Frameworks are quite
 excellent. In the final analysis, we had to decide for some of these Frameworks. 
 Mockup is using well proven and widely used Frameworks. For sure, we will have 
 to adapt Mockup to fit to changed conditions in the future, but we're well off 

@@ -2,13 +2,13 @@ Mockup and Alternatives
 =======================
 
 Mockup was created at a time when no alternatives were in sight. But
-nowdays, with the explosion of JavaScript Frameworks, there are plenty of
+nowadays, with the explosion of JavaScript Frameworks, there are plenty of
 them.
 
 Web Components
 --------------
 
-Web Components are a W3C draft and will likely gain a lot of momentum, once
+Web Components are a W3C draft and will likely gain a lot of momentum once
 browsers better support it. Web components can already be used by using Google's
 Polymer or Mozilla's X-Tags libraries. The only drawback is that those
 libraries only work for recent browser generations.

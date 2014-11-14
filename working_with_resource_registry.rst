@@ -8,7 +8,7 @@ these instructions.
 Include a pattern from the ``Mockup`` package in Plone core
 -----------------------------------------------------------
 
-The ``Mockup`` package is alreadt a core dependency of ``Products.CMFPlone``
+The ``Mockup`` package is already a core dependency of ``Products.CMFPlone``
 and Mockup's pattern directory is available as a browser resource and thus
 accessible for Plone.
 
@@ -25,10 +25,10 @@ new resource registry (``@@resourceregistry-controlpanel``), which puts the
 compiled file back to the filesystem, commit it and push it.
 
 
-Include a pattern from a external Mockup based project in your Plone project
-----------------------------------------------------------------------------
+Include a pattern from an external Mockup based project in your Plone project
+-----------------------------------------------------------------------------
 
-If your pattern is in a seperate package than ``Mockup``, then you have to make
-sure, that your pattern is accessible for Plone via a browser resource.
+If your pattern is in a separate package than ``Mockup``, then you have to make
+sure that your pattern is accessible for Plone via a browser resource.
 You also have to provide a Generic Setup profile for plone.app.registry
-(``registry.xml``) and add a entry for your pattern in it.
+(``registry.xml``) and add an entry for your pattern in it.

@@ -4,7 +4,7 @@ Working with Mockup
 Building the documentation and examples
 ---------------------------------------
 
-To see it in action, you must compile everything once, with:
+To see it in action, you must compile everything once with:
 
 .. code-block:: bash
 
@@ -16,7 +16,7 @@ Then, start the python test server like so:
 
     $ python -m SimpleHTTPServer
 
-After that, access the served site in a webbrowser via the url http://localhost:8000
+After that, access the served site in a web browser via the url http://localhost:8000
 
 
 Running tests
@@ -76,7 +76,7 @@ help with debugging by changing the verbosity of the log messages.
 Using Bower directly
 --------------------
 
-After changes to bower.json, you don't have to run ``make bootstrap``, which
+After making changes to bower.json, you don't have to run ``make bootstrap``, which
 wipes all dependencies and starts installing them all over again. You can use
 bower directly:
 
@@ -106,7 +106,7 @@ bower_components::
 
 .. note::
     You can also point bower.json to a local git checkout. You have to point
-    bower directly to the `.git` subdirectory and declare the branchname in
+    bower directly to the `.git` subdirectory and declare the branch name in
     order to be able to use a local checkout. For that, replace the
     `mockup-core` line in `bower.json` with something like the following::
 

@@ -3,7 +3,7 @@ Including a pattern from Mockup
 
 So, you have seen all the patterns already bundled with the mockup project in the `examples page <http://plone.github.io/mockup/dev/#pattern>`_ and you want to use one (or several). You'll find this incredible easy.
 
-We will be assuming you have created your project using the instructions from previous chapter. If not, then adjust your variables and file names accordingly.
+We will be assuming you have created your project using the instructions from the previous chapter. If not, then adjust your variables and file names accordingly.
 
 
 Assume the following HTML
@@ -57,7 +57,7 @@ You can include this in your ``dev/dev.html`` file from your project. Now, if yo
 Pick the pattern to use
 -----------------------
 
-For this excercise, we will pick the `Table Sorter <http://plone.github.io/mockup/dev/#pattern/tablesorter>`_ pattern. To use it, we need to add a special css class ``pat-tablesorter`` to the HTML snippet we have, so replace:
+For this exercise, we will pick the `Table Sorter <http://plone.github.io/mockup/dev/#pattern/tablesorter>`_ pattern. To use it, we need to add the special css class ``pat-tablesorter`` to the HTML snippet we have, so replace:
 
 .. code-block:: html
 
@@ -207,7 +207,7 @@ Now refresh again, and you will see your TOC has a default styling applied.
 Configure the pattern
 ~~~~~~~~~~~~~~~~~~~~~
 
-As a final excercise, this pattern allows configuration to be passed from the HTML, so let's make the duration of the movement to be fast and to only include h1 and h2 in the TOC:
+As a final exercise, this pattern allows configuration to be passed from the HTML, so let's make the duration of the movement to be fast and to only include h1 and h2 in the TOC:
 
 .. code-block:: html
 

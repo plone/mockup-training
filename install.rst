@@ -55,16 +55,16 @@ node and bower dependencies.
 Installing Mockup with Vagrant
 ------------------------------
 
-Vagrant is a scripting environment for virtual machine hosts like VritualBox.
+Vagrant is a scripting environment for virtual machine hosts like VirtualBox.
 There are two configuration files, ``Vagrantfile`` and ``provision.sh`` which
 are used to bootstrap a whole system including any dependencies, which should
 be installed on the guest system.
 
-Vagrant can be a great choice, if you don't want to install Mockup and it's
+Vagrant can be a great choice, if you don't want to install Mockup and its
 dependencies directly to your machine, possibly polluting your environment
 (but normally, Mockup doesn't install anything globally). Vagrant is also a
 great choice, if you want to provide the same environment for every developer.
-Therefore we choosed it as the recommended installation method for our Mockup
+Therefore we chose it as the recommended installation method for our Mockup
 training.
 
 With this method, Mockup is installed by installing a virtual machine with
@@ -89,13 +89,13 @@ Now we can install Mockup itself:
 
 .. code-block:: bash
 
-    $ # The following run on the host OS:
+    $ # Run the following on the host OS:
     $ git clone https://github.com/plone/mockup.git
     $ cd mockup
     $ vagrant up
 
 Now, go for lunch or a long coffee break. "vagrant up" is going to download a
-virtual box kit (unless you already happen to have a match    Windows, it will
+virtual box kit (unless you already happen to have a match Windows, it will
 also generate an ssh key pair that's usable with Putty.
 
 .. note::
@@ -116,7 +116,7 @@ Now you are logged into your virtual machine:
 
 .. code-block:: bash
 
-    $ # The following run on the guest VM:
+    $ # Run the following on the guest VM:
     $ cd /vagrant
     $ git pull
     $ make bootstrap
@@ -141,13 +141,13 @@ important commands for using vagrant are listed below.
 
 - ``vagrant up``
 
-    This command start the virtual environment. When running it for the first
+    This command will start the virtual environment. When running it for the first
     time it will install and configure all needed packages.  NOTE: Some of the
     output will be in red, this is normal.
 
 - ``vagrant reload``
 
-    This command will make the virtual environment to restart. You need to do
+    This command will make the virtual environment restart. You need to do
     this the first time
 
 - ``vagrant ssh``
@@ -164,7 +164,7 @@ important commands for using vagrant are listed below.
 - ``vagrant destroy``
 
     This command will destroy the virtual environment. Be aware that this will
-    remove the entire virtual machine. Be careful and know, when you're using
+    remove the entire virtual machine. Be careful and know when you're using
     it.
 
 For additional reading, go to `Vagrant homepage <https://www.vagrantup.com/>`_.

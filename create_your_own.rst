@@ -1,11 +1,11 @@
 Create your own mockup project
 ==============================
 
-As seen earlier in this training, one alternative to work with Mockup, is to
+As seen earlier in this training, one alternative to work with Mockup is to
 pull the complete source from github, do your changes, removals and
-modifications and finally compile. This process, has obvious disadvantages, and
-for this, we have created a `generator
-<https://github.com/collective/generator-plonemockup>`_ that allows you to
+modifications and finally compile. This process has obvious disadvantages, and
+for this we have created a `generator
+<https://github.com/collective/generator-plonemockup>`_, that allows you to
 generate the bare minimum you need to start your project.
 
 
@@ -46,14 +46,14 @@ Just pull the development version of the generator:
     $ git clone git@github.com:collective/generator-plonemockup.git
 
 The relevant files are "Vagrantfile" and "provision.sh". Understanding and
-using Vagrant is out of this document scope. For now, all you need to care
+using Vagrant is out of this document's scope. For now, all you need to care
 about is running any of the following commands inside the directory you have
 just cloned, that holds the Vagrantfile:
 
 - ``vagrant up``
 
 
-Make sure you run "vagrant ssh" to login to your virtual environment. When
+Make sure you run "vagrant ssh" to log in to your virtual environment. When
 inside, you will be user "vagrant", which has full sudo privileges inside that
 machine.
 
@@ -75,14 +75,14 @@ Go to /vagrant and create a directory for your project, we'll call it "myproject
 Common steps
 ~~~~~~~~~~~~
 
-From this point on, instructions are the same either you are running vagrant or not:
+From this point on, instructions are the same whether you are running vagrant or not:
 
 .. code-block:: bash
 
     $ cd myproject/
     $ yo plonemockup
 
-The generator will ask a bunch of questions for generating the project and populating the packages.json among other things. They are detailed below
+The generator will ask a bunch of questions for generating the project and populating the packages.json among other things. They are detailed below:
 
 - ``Name for the project``
 
@@ -102,21 +102,21 @@ Optional, specify your project's URL
 
 - ``Repository``
 
-If you intend to publish this in a version control system, you can specify here the URL, it will default to https://github.com/collective/{packageName}, in our case https://github.com/collective/myparoject
+If you intend to publish this in a version control system, you can specify the URL. It will default to https://github.com/collective/{packageName}, in our case https://github.com/collective/myproject
 
 - ``Author full name, email and webpage``
 
-You can specify here your name, email address and a web site, to be included as metadata with your project
+You can specify your name, email address and a web site to be included as metadata with your project
 
 - ``License``
 
-Choose the license fo your project. At the moment, GPLv2, GPLv3 and MIT are supported. You can modify the package later to provide your own if needed.
+Choose the license for your project. At the moment, GPLv2, GPLv3 and MIT are supported. You can modify the package later to provide your own if needed.
 
 - ``Name for your pattern``
 
-Here you can specify the name for a pattern you intend to develop. There is no way to not choose one at the moment, it will be in future versions. If you don't intend to develop a pattern, just put any name here, and you can remove it manually later.
+Here you can specify the name for a pattern you intend to develop. There is no way to not choose one at the moment, there will be in future versions. If you don't intend to develop a pattern, just put any name here, and you can remove it manually later.
 We will be developing a new pattern, and we are going to call it "mypattern".
-Just as the project name, avoid spaces and hyphens (This will be fixed too in future releases)
+Just like the project name, avoid spaces and hyphens (This will also be fixed in future releases)
 
 
 After answering all questions, your package is created and all dependencies are pulled in using bower and npm. Just wait until it finishes.
@@ -137,7 +137,7 @@ This will assume we have named our project 'myproject' and our pattern, 'mypatte
 Structure
 ~~~~~~~~~
 
-The newly created package, has the full structure of files and directories ready for start developing::
+The newly created package has the full structure of files and directories ready to start developing::
 
     ├── bower.json
     ├── config.js
@@ -147,7 +147,7 @@ The newly created package, has the full structure of files and directories ready
     ├── Gruntfile.js
     ├── js
     │   ├── bundles
-    │   │   └── myproject.js
+    │   │   └── myproject.js
     │   └── patterns
     │       └── mypattern.js
     ├── less
@@ -162,7 +162,7 @@ The newly created package, has the full structure of files and directories ready
 The 'dev' directory
 ~~~~~~~~~~~~~~~~~~~
 
-This is a helper folder. It provides a dev.html which already includes a basic html to start developing your pattern and includes the needed javascript files. The 'dev.js' file is the one that loads your bundle and pattern(s) automatically so you can start developing right away.
+This is a helper folder. It provides a dev.html which already includes basic html to start developing your pattern and includes the needed javascript files. The 'dev.js' file is the one that loads your bundle and pattern(s) automatically so you can start developing right away.
 
 
 The 'js' directory
@@ -175,7 +175,7 @@ You will be working mostly in js/patterns/mypattern.js if you are developing a n
 The 'less' directory
 ~~~~~~~~~~~~~~~~~~~~
 
-This is where you will include the less files for your project
+This is where you will include the less files for your project.
 
 
 The 'tests' directory
@@ -199,4 +199,4 @@ Once developing is done and you want to compile your work, just go to your proje
 
     $ make
 
-If you don't get any errors, you should endup with a new directory called build, where you will find your files ready to use
+If you don't get any errors, you should end up with a new directory called build, where you will find your files ready to use.

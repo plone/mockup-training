@@ -1,7 +1,7 @@
 Overview of Mockup
 ==================
 
-There is also a basic minimal pattern with with comments all over the source
+There is also a basic minimal pattern with comments all over the source
 code, which explains the structure of a Mockup project. You can find it here:
 https://github.com/collective/mockup-minimalpattern
 
@@ -27,9 +27,9 @@ RequireJS vs Common JS modules
 ------------------------------
 
 Mockup is using RequireJS and Common JS modules at the same time. For all
-frontend related stuff, RequireJS with it's configuration in `js/config.js` and
+frontend related stuff, RequireJS with its configuration in `js/config.js` and
 `define` method is used. For all build infrastructure related stuff, CommonJS
-modules, with it's `module.exports` declarations are used.
+modules, with its `module.exports` declarations are used.
 
 If you are aware about this distinction, you can avoid some head wrangling
 moments.
@@ -83,7 +83,7 @@ Mockup Project Structure
 
 ``build/``: Contains the builded bundles. This are combined, optimized, and
 minimized JavaScript code, as well as the compiled CSS (Less) and media files
-from a bunlde's dependencies.
+from a bundle's dependencies.
 
 ``docs/``: Mockup documentation files and examples built with ``make docs``.
 
@@ -97,7 +97,7 @@ viewing the documentation via ``http://localhost:8000`` after starting ``python
 
 ``js/bundles/``: The directory, where Mockup's bundles are defined.
 
-``js/config.js``: RequireJS configuration. This is the file, where all
+``js/config.js``: RequireJS configuration. This is the file where all
 JavaScript dependencies are defined, so that RequireJS is able to find them via
 a name.
 
@@ -105,16 +105,16 @@ a name.
 a JavaScript i18n framework and integration layer for Plone message catalogs.
 
 ``js/router.js``: Framework to add routing capabilities, execute callbacks on
-routing and manipulating the browser history on routing.
+routing, and manipulating the browser history on routing.
 
 ``js/ui/``: Mockup UI components for reuse in patterns (Buttons, Toolbars, etc).
 
 ``js/utils.js``: Generic reusable utilities for patterns. Current available
-utilies include: ``generateId``, ``Loading`` animation, ``QueryHelper`` for
+utilities include: ``generateId``, ``Loading`` animation, ``QueryHelper`` for
 generating request query strings and more.
 
 ``less/``: All LESS style files, which are needed for bundles or patterns.
-Grunt's less task default behavior is to compile a CSS file from less the less
+Grunt's less task default behavior is to compile a CSS file from the less
 file with the same name as the bundle name. For more information se the `grunt.js
 <https://github.com/plone/mockup-core/blob/87d58d984d5ab193e23f6b6fcd5883a159113b10/js/grunt.js#L53>`_
 file in ``mockup-core``.
@@ -125,7 +125,7 @@ and `jquery.event.drop.js <http://threedubmedia.com/code/event/drop>`_ files,
 which provide drag and drop events for jQuery.
 
 ``Makefile``: ``GNU make`` Makefile, which defines common actions for
-developing with mockup. It uses Grunt to a large extend. E.g. ``make
+developing with mockup. It uses Grunt to a large extent. E.g. ``make
 bootstrap``, ``make test``, ``make docs`` and ``make bundles``. For more
 information see: :ref:`makefile-commands`.
 
@@ -142,8 +142,8 @@ and the like.
 ``package.json``: Node / npm package dependencies and metadata for Mockup's
 infrastructure. The dependencies defined in here land in ``node_modules``.
 
-``patterns/``: Here, the actual patterns are defined in. For each pattern, one
-directory. Some patterns include less resource files, templates and submodules.
+``patterns/``: Here, the actual patterns are defined. For each pattern, one
+directory. Some patterns include LESS resource files, templates and submodules.
 
 ``setup.py``: Setuptools based Python package infrastructure. This file is
 needed to include Mockup in Plone for development, e.g. in
