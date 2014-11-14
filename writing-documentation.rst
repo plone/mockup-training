@@ -1,3 +1,5 @@
+.. _writing-documentation:
+
 Writing documentation for Mockup
 ================================
 

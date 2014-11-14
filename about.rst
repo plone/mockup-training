@@ -73,7 +73,7 @@ We slightly tweaked readthedocs-theme in ``_static/custom.css`` so that it works
 - We start hiding the navbar much earlier so that it does not interfere with the text.
 - We enlarge the default width of the content-area.
 
-Excercises
+Exercises
 ~~~~~~~~~~
 
 Some additional javascript shows hidden solutions for exercises by clicking.
@@ -136,7 +136,7 @@ You can now open the output from ``_build/html/index.html``. To build the presen
 Contributing
 ------------
 
-Everyone is **very welcome** to contribute. Minor bugfixes can be pushed direcly in the `repository <https://github.com/plone/training>`_, bigger changes should made as `pull-requests <https://github.com/plone/training/pull/>`_ and discussed previously in tickets.
+Everyone is **very welcome** to contribute. Minor bugfixes can be pushed directly in the `repository <https://github.com/plone/training>`_, bigger changes should made as `pull-requests <https://github.com/plone/training/pull/>`_ and discussed previously in tickets.
 
 
 License

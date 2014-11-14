@@ -26,3 +26,4 @@ Contents:
     writing-documentation
     mockup-alternatives
     working_with_resource_registry
+    development-process
