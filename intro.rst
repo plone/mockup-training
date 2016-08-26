@@ -33,7 +33,7 @@ Mockup gives us an elegant solution to all of the problems outlined above: By
 using RequireJS modules (as well as the Common JS based node modules for the
 build infrastructure), we now have to declare every JavaScript dependency
 explicitly. RequireJS resolves the dependency chains and loads all resources in
-the correct order. Clubbering the global namespace is normally not necessary
+the correct order. Clobbering the global namespace is normally not necessary
 anymore. Mockup encourages us to also test all JavaScript code, and it does it
 by using well known testing frameworks which allows us to easily write unit and
 integration tests. All patterns are encapsulated and can be easily reused.
